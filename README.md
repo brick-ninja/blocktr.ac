@@ -1,2 +1,17 @@
-# blocktr.ac
-Website that can filters blockchain transactions and get notifications from user purposes.
+# Blockchain Transaction Filters
+
+## Installation
+
+Use npm or yarn to install dependencies.
+
+```bash
+yarn install
+```
+
+## Test Code
+
+Run this command to test the project.
+
+```bash
+yarn test
+```
