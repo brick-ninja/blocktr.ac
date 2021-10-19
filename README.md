@@ -15,7 +15,6 @@ Zitui was developed and deployed in a *CentOS8* environment. Theoretically an en
 2. curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 3. sudo rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg
 4. sudo dnf install git nodejs yarn
-5. git clone git@bitbucket.org:movitto/zitui.git
 6. cd zitui
 7. yarn install
 
