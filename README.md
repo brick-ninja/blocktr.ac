@@ -52,7 +52,3 @@ yarn build
 ```
 
 The static content can be copied from the dist directory to your webserver.
-
-## Legal
-Copyright (c) 2020 Dev Null Productions LLC, All Rights Reserved
-[devnullproductions@gmail.com](mailto:devnullproductions@gmail.com)
