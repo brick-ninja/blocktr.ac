@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Shape@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03---Filter-result-" transform="translate(-1175.000000, -179.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-14" transform="translate(1154.000000, 171.000000)">
+                <path d="M32.6666667,8 L22.6666667,8 C21.75,8 21,8.75 21,9.66666667 L21,21.3333333 L22.6666667,21.3333333 L22.6666667,9.66666667 L32.6666667,9.66666667 L32.6666667,8 Z M31.8333333,11.3333333 L36.8333333,16.3333333 L36.8333333,24.6666667 C36.8333333,25.5833333 36.0833333,26.3333333 35.1666667,26.3333333 L25.9916667,26.3333333 C25.075,26.3333333 24.3333333,25.5833333 24.3333333,24.6666667 L24.3416667,13 C24.3416667,12.0833333 25.0833333,11.3333333 26,11.3333333 L31.8333333,11.3333333 Z M31,17.1666667 L35.5833333,17.1666667 L31,12.5833333 L31,17.1666667 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

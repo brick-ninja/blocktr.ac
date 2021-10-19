@@ -1,0 +1,54 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "4F1E08485F0849DD2407A64953EB81FA30A4E38A113E4FB8AF4C24A4E100984C",
+    "ledger_index": 54816806,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rfGDefKkiNojmMV7BhBRFGfRk6XPHYpMYo",
+                        "Balance": "100741431",
+                        "Domain": "7872703A2F2F32374543443745443742423246303730443230423546353235373636444245343531323546313442394645354533323146324346323734303442434232363143",
+                        "Flags": 0,
+                        "OwnerCount": 0,
+                        "Sequence": 72101
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "8DE4CAA21910C991BD8CD61BDF145193A1453F5B1FDA031FB707C86632AA6147",
+                    "PreviousFields": {
+                        "Balance": "100741441",
+                        "Sequence": 72100
+                    },
+                    "PreviousTxnID": "4DDC54012538CA224EAB47099587CFD5D489ADA880E96158F34F7DEAE3D5BBD4",
+                    "PreviousTxnLgrSeq": 54815879
+                }
+            }
+        ],
+        "TransactionIndex": 20,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rfGDefKkiNojmMV7BhBRFGfRk6XPHYpMYo",
+        "Fee": "10",
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "{\"prev_hash\":\"xrp://27ECD7ED7BB2F070D20B5F525766DBE45125F14B9FE5E321F2CF27404BCB261C\",\"timestamp\":\"2020-04-15T20:56:16.240Z\",\"data_json\":{\"sig\":{\"alg\":\"ed25519\",\"kid\":\"q8ot\",\"use\":\"sig\",\"key\":\"lID4kVlX3nqGy9h2xJMq0BlbG8uWLH+Yf6z+YdoabJY=\"},\"enc\":{\"alg\":\"x25519-xsalsa20-poly1305\",\"kid\":\"60wx\",\"use\":\"enc\",\"key\":\"/kJiHc6HxJppYJktTDJdXINMbpKQAcVAyA8weapJRS8=\"}},\"address\":\"rfGDefKkiNojmMV7BhBRFGfRk6XPHYpMYo\"}",
+                    "MemoType": "publickeys"
+                }
+            }
+        ],
+        "Sequence": 72100,
+        "SigningPubKey": "039BE6788CFAFCC5C5BAA12345584C62FA77CF1A1F0895E78632FD4C762043E8D4",
+        "TransactionType": "AccountSet",
+        "TxnSignature": "3045022100C6D29BEEFDC0197F36C55FC2B4D03BE65129BF6170A30D95BA67D3B5A8DC2656022029D53289372815C6407E5808A78A6E7B64C1E0C63A3523E0B0EA034DADACCE4A",
+        "date": "2020-04-15T20:56:20.000Z",
+        "hash": "D91AE1523C72A20812BCC4839C60039694154B3F5A99CAB790C09558B2205AE8"
+    },
+    "type": "transaction",
+    "validated": true
+}

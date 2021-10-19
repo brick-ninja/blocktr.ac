@@ -1,0 +1,48 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "4F1E08485F0849DD2407A64953EB81FA30A4E38A113E4FB8AF4C24A4E100984C",
+    "ledger_index": 54816806,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rfGDefKkiNojmMV7BhBRFGfRk6XPHYpMYo",
+                        "Balance": "100741421",
+                        "Domain": "7872703A2F2F44393141453135323343373241323038313242434334383339433630303339363934313534423346354139394341423739304330393535384232323035414538",
+                        "Flags": 0,
+                        "OwnerCount": 0,
+                        "Sequence": 72102
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "8DE4CAA21910C991BD8CD61BDF145193A1453F5B1FDA031FB707C86632AA6147",
+                    "PreviousFields": {
+                        "Balance": "100741431",
+                        "Domain": "7872703A2F2F32374543443745443742423246303730443230423546353235373636444245343531323546313442394645354533323146324346323734303442434232363143",
+                        "Sequence": 72101
+                    },
+                    "PreviousTxnID": "D91AE1523C72A20812BCC4839C60039694154B3F5A99CAB790C09558B2205AE8",
+                    "PreviousTxnLgrSeq": 54816806
+                }
+            }
+        ],
+        "TransactionIndex": 21,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rfGDefKkiNojmMV7BhBRFGfRk6XPHYpMYo",
+        "Domain": "7872703A2F2F44393141453135323343373241323038313242434334383339433630303339363934313534423346354139394341423739304330393535384232323035414538",
+        "Fee": "10",
+        "Sequence": 72101,
+        "SigningPubKey": "039BE6788CFAFCC5C5BAA12345584C62FA77CF1A1F0895E78632FD4C762043E8D4",
+        "TransactionType": "AccountSet",
+        "TxnSignature": "304402203E515CD416FB7FDBAF43AAC6AC91E3DF186AA2C7394008BCE794289B20BBEAB802207C361F65B1431092822A19F4FA0B60D9D960D9FA8A1A4F04960BDA7BD21AA97C",
+        "date": "2020-04-15T20:56:20.000Z",
+        "hash": "72C767D07D22511785E68A2CA50C1F7A6A3E124A8D9F05C4746B2D9B9D07362C"
+    },
+    "type": "transaction",
+    "validated": true
+}

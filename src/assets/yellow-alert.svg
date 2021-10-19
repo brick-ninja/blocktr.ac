@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="97px" height="97px" viewBox="0 0 97 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>yellow_allert@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-3---test-emtpy-filter" transform="translate(-812.000000, -300.000000)">
+            <g id="Group-2" transform="translate(812.000000, 300.000000)">
+                <g id="yellow_allert">
+                    <circle id="Oval" fill="#FCD16E" opacity="0.200000003" cx="48.5" cy="48.5" r="48.5"></circle>
+                    <circle id="Oval" fill="#FCD16D" cx="48.5" cy="48.5" r="30.5"></circle>
+                    <g id="block-24px" transform="translate(34.000000, 34.000000)">
+                        <g id="warning-24px">
+                            <polygon id="Path" points="0 0 28.8000011 0 28.8000011 28.8000011 0 28.8000011"></polygon>
+                            <path d="M1.20000005,25.200001 L27.6000011,25.200001 L14.4000006,2.4000001 L1.20000005,25.200001 Z M15.6000006,21.6000009 L13.2000005,21.6000009 L13.2000005,19.2000008 L15.6000006,19.2000008 L15.6000006,21.6000009 Z M15.6000006,16.8000007 L13.2000005,16.8000007 L13.2000005,12.0000005 L15.6000006,12.0000005 L15.6000006,16.8000007 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

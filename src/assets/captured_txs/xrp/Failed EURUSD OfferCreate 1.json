@@ -1,0 +1,58 @@
+{
+    "engine_result": "tecUNFUNDED_OFFER",
+    "engine_result_code": 103,
+    "engine_result_message": "Insufficient balance to fund created offer.",
+    "ledger_hash": "1BFBBEF03A0A1431F193260B1365ED3657CD8893BD07C35000B0992A809997BF",
+    "ledger_index": 53393058,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rhS2H7ETM3wBkFETvYycoUm9FEDYi44Pg4",
+                        "Balance": "6541686507",
+                        "Flags": 0,
+                        "OwnerCount": 18,
+                        "Sequence": 29977093
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "6B555B9A14F4E40BB83EF68DE332ECCCC84D310AFFABBAA3606F7969C688EC21",
+                    "PreviousFields": {
+                        "Balance": "6541696507",
+                        "Sequence": 29977092
+                    },
+                    "PreviousTxnID": "08AFBF6BF882C62D996777E68002FFBBFF18F2ABCDB6AB862BF83FD0A52DCB45",
+                    "PreviousTxnLgrSeq": 53393058
+                }
+            }
+        ],
+        "TransactionIndex": 101,
+        "TransactionResult": "tecUNFUNDED_OFFER"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rhS2H7ETM3wBkFETvYycoUm9FEDYi44Pg4",
+        "Fee": "10000",
+        "Flags": 131072,
+        "LastLedgerSequence": 53393059,
+        "Sequence": 29977092,
+        "SigningPubKey": "030C673ADE7B422F29474D11DA07D7A32A73C29CDA5A1ED6535B0E525979B9199C",
+        "TakerGets": {
+            "currency": "USD",
+            "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+            "value": "3320.394931973382"
+        },
+        "TakerPays": {
+            "currency": "EUR",
+            "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+            "value": "2969.041818775865"
+        },
+        "TransactionType": "OfferCreate",
+        "TxnSignature": "30440220506E6634BC807965BD3DF697D01B0ACDF4597C7363D46EA9102D5B794A993F7802201D50DD9D868EA0FD81A6EF0570532C6A16EAE540586DF654D49B931B551BB62B",
+        "date": "2020-02-13T02:15:40.000Z",
+        "hash": "7B4CEFA804671AAB1E10740DFF4FEF176D6CFE446D074A251C14ACCC8DFAAD99",
+        "owner_funds": "0"
+    },
+    "type": "transaction",
+    "validated": true
+}

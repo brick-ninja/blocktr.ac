@@ -1,0 +1,107 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "D5FDD1927B4B9F3B42D4710E052E15401A7440EC398B4B4FDA36B2AFCDE1FB55",
+    "ledger_index": 53388626,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "CreatedNode": {
+                    "LedgerEntryType": "Offer",
+                    "LedgerIndex": "239BDD759DB6EBAFC51BD5E8A9605A4B1AF0EB65CE1AF0AFA87DEB585F01CB54",
+                    "NewFields": {
+                        "Account": "r3rhWeE31Jt5sWmi4QiGLMZnY3ENgqw96W",
+                        "BookDirectory": "D955751E45DA856CB182D892343DBDFD6D57CFB5B7244FEE560E0B2E880B7E92",
+                        "OwnerNode": "0000000000000011",
+                        "Sequence": 379563,
+                        "TakerGets": {
+                            "currency": "BTC",
+                            "issuer": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+                            "value": "1.560721650919118"
+                        },
+                        "TakerPays": {
+                            "currency": "ETH",
+                            "issuer": "rcA8X3TVMST1n3CJeAdGk1RdRCHii7N2h",
+                            "value": "61.6944552415691"
+                        }
+                    }
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Flags": 0,
+                        "IndexPrevious": "0000000000000000",
+                        "Owner": "r3rhWeE31Jt5sWmi4QiGLMZnY3ENgqw96W",
+                        "RootIndex": "FDE0DCA95589B07340A7D5BE2FD72AA8EEAC878664CC9B707308B4419333E551"
+                    },
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "6F28257CA6EB2C9281D1116854778936145B9CA19CB4BC420879A53AA5BC27BB"
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "r3rhWeE31Jt5sWmi4QiGLMZnY3ENgqw96W",
+                        "Balance": "125188392223",
+                        "Flags": 0,
+                        "OwnerCount": 33,
+                        "Sequence": 379564
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "B1B9AAC12B56B1CFC93DDC8AF6958B50E89509F377ED4825A3D970F249892CE3",
+                    "PreviousFields": {
+                        "Balance": "125188392233",
+                        "OwnerCount": 32,
+                        "Sequence": 379563
+                    },
+                    "PreviousTxnID": "2B1FA69865120E87EA6BA44E079A048D8623370C957C173D5008313ECA69D1CE",
+                    "PreviousTxnLgrSeq": 53388626
+                }
+            },
+           {
+                "CreatedNode": {
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "D955751E45DA856CB182D892343DBDFD6D57CFB5B7244FEE560E0B2E880B7E92",
+                    "NewFields": {
+                        "ExchangeRate": "560E0B2E880B7E92",
+                        "RootIndex": "D955751E45DA856CB182D892343DBDFD6D57CFB5B7244FEE560E0B2E880B7E92",
+                        "TakerGetsCurrency": "0000000000000000000000004254430000000000",
+                        "TakerGetsIssuer": "06A148131B436B2561C85967685B098E050EED4E",
+                        "TakerPaysCurrency": "0000000000000000000000004554480000000000",
+                        "TakerPaysIssuer": "06CC4A6D023E68AA3499C6DE3E9F2DC52B8BA254"
+                    }
+                }
+            }
+        ],
+        "TransactionIndex": 24,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "r3rhWeE31Jt5sWmi4QiGLMZnY3ENgqw96W",
+        "Fee": "10",
+        "Flags": 0,
+        "LastLedgerSequence": 53388632,
+        "Sequence": 379563,
+        "SigningPubKey": "03C48299E57F5AE7C2BE1391B581D313F1967EA2301628C07AC412092FDC15BA22",
+        "TakerGets": {
+            "currency": "BTC",
+            "issuer": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+            "value": "1.560721650919118"
+        },
+        "TakerPays": {
+            "currency": "ETH",
+            "issuer": "rcA8X3TVMST1n3CJeAdGk1RdRCHii7N2h",
+            "value": "61.6944552415691"
+        },
+        "TransactionType": "OfferCreate",
+        "TxnSignature": "304402201C51A0EB7DC319E3DCD112818462EF8399CEE42A2B0128D302BCFEDDA86F166A022064B349FF76A05C42F04604F3A18991A4F0942E2187F57C57BCC6B62F3626FAB0",
+        "date": "2020-02-12T21:38:01.000Z",
+        "hash": "0CB3A0AF6617BBA7AD96A07343280AEE056EB495E622152D0AEA9E98920C75E1",
+        "owner_funds": "2.592691258137907"
+    },
+    "type": "transaction",
+    "validated": true
+}

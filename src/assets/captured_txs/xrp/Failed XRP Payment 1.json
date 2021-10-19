@@ -1,0 +1,59 @@
+{
+    "engine_result": "tecUNFUNDED_PAYMENT",
+    "engine_result_code": 104,
+    "engine_result_message": "Insufficient XRP balance to send.",
+    "ledger_hash": "BCF197D11B2F9979C3B750C0C8AFFB4AC4F7786C947D4DDB0563CBADC680614D",
+    "ledger_index": 53387755,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rDTBYpo9T5F3iShUnASEskdRdQNEdDvq2s",
+                        "Balance": "49992168",
+                        "Flags": 0,
+                        "OwnerCount": 2,
+                        "Sequence": 11
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "B0F932BABA1370C6DDE8C05212BEC2CE8A35554AA44C8517FA401C273ED639E5",
+                    "PreviousFields": {
+                        "Balance": "49992183",
+                        "Sequence": 10
+                    },
+                    "PreviousTxnID": "63681180F4C0C5DDA0F48AFDAFB4340A60C0767C1BB0FD50B93B89B3B95F0B56",
+                    "PreviousTxnLgrSeq": 53387751
+                }
+            }
+        ],
+        "TransactionIndex": 27,
+        "TransactionResult": "tecUNFUNDED_PAYMENT"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rDTBYpo9T5F3iShUnASEskdRdQNEdDvq2s",
+        "Amount": "49480000",
+        "Destination": "rLW9gnQo7BQhU6igk5keqYnH3TVrCxGRzm",
+        "DestinationTag": 413050524,
+        "Fee": "15",
+        "Flags": 2147483648,
+        "LastLedgerSequence": 53387759,
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "gatehub",
+                    "MemoFormat": "text/plain",
+                    "MemoType": "client"
+                }
+            }
+        ],
+        "Sequence": 10,
+        "SigningPubKey": "0366B4B795DAD081E8F72BEB4514518F4953A2D5C5956E9A87E6FCCB929043EFD1",
+        "TransactionType": "Payment",
+        "TxnSignature": "3045022100FC4B4745B79225C85A892B91CA13E703CFC655E9100104526436DDCC8258C24402203A1CD8E31C9ABF0492904E88F914CD88A788AD67B8C9A320258EF785BEC3D6E6",
+        "date": "2020-02-12T20:43:42.000Z",
+        "hash": "19B02BC42284A6334E2A0BD9A9C63890FA35B1B1E51BE0961F2CC6788076F4CA"
+    },
+    "type": "transaction",
+    "validated": true
+}

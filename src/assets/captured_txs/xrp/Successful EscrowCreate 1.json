@@ -1,0 +1,83 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "EFAEED7F1431A01E289D823DA8034450AEC78B7B870E52E9DFDB3949E2AABD9D",
+    "ledger_index": 53475237,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rPmXwu9L1tqSfoRHd3isEZL3LVJxPWWFad",
+                        "Balance": "6236169229",
+                        "Flags": 0,
+                        "OwnerCount": 28,
+                        "Sequence": 55
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "A16D47F62789F9764D73E890412AB98789365D1D2BB349AFBC5031BDE1A4F249",
+                    "PreviousFields": {
+                        "Balance": "6336169241",
+                        "OwnerCount": 27,
+                        "Sequence": 54
+                    },
+                    "PreviousTxnID": "1818527B11F51443F15DA7D68C6AFAA52A835D07B528442A368FE16C1253CBC2",
+                    "PreviousTxnLgrSeq": 53475219
+                }
+            },
+           {
+                "CreatedNode": {
+                    "LedgerEntryType": "Escrow",
+                    "LedgerIndex": "B31827EAA38FBBEDFD50E513824693C299DDA12FA8365B87F9BAB1529B2C95F7",
+                    "NewFields": {
+                        "Account": "rPmXwu9L1tqSfoRHd3isEZL3LVJxPWWFad",
+                        "Amount": "100000000",
+                        "Destination": "rPmXwu9L1tqSfoRHd3isEZL3LVJxPWWFad",
+                        "FinishAfter": "2023-05-05T08:11:00.000Z",
+                        "OwnerNode": "0000000000000001"
+                    }
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Flags": 0,
+                        "Owner": "rPmXwu9L1tqSfoRHd3isEZL3LVJxPWWFad",
+                        "RootIndex": "3CCBA4F8C7798BF8E349DA752D7F38B2DBA1528C830CEEB9999C36D35F05B95C"
+                    },
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "B4575E09932FFBD98BDDA4957BD87D18C1047F52FD9FDBAF0B701109618A60CC"
+                }
+            }
+        ],
+        "TransactionIndex": 8,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rPmXwu9L1tqSfoRHd3isEZL3LVJxPWWFad",
+        "Amount": "100000000",
+        "Destination": "rPmXwu9L1tqSfoRHd3isEZL3LVJxPWWFad",
+        "Fee": "12",
+        "FinishAfter": "2023-05-05T08:11:00.000Z",
+        "Flags": 2147483648,
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "Bithomp tool v. 0.4.9",
+                    "MemoFormat": "plain/text",
+                    "MemoType": "client"
+                }
+            }
+        ],
+        "Sequence": 54,
+        "SigningPubKey": "0233C2D0C1D96E539790AADB27434A0C33B1B13E1FB81AE8A04A4D34B3B7F3F5CA",
+        "TransactionType": "EscrowCreate",
+        "TxnSignature": "3045022100D7D50AD3A3D675BEE9A6251584152707673D0275722062FC0C5B1AB9A6A077F3022038C408A45E1D30B3B52FFBEDE918152E1D15610BA54A0F36877C6A31C7826E2A",
+        "date": "2020-02-16T16:34:20.000Z",
+        "hash": "A3239576D29D4980F919A6FF1A89EF1D81441CF93ED379C207078027776C3818"
+    },
+    "type": "transaction",
+    "validated": true
+}

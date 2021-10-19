@@ -1,0 +1,98 @@
+{
+  "id": "16f12366e623105dbfd3e9552f735a86992570c3430c3d8adb19efb9c5e8157b",
+  "hash": "16f12366e623105dbfd3e9552f735a86992570c3430c3d8adb19efb9c5e8157b",
+  "result": {
+    "result": {
+      "_type": "txSuccess",
+      "results": [
+        {
+          "_type": "manageBuyOffer",
+          "manageBuyOfferResult": {
+            "_type": "manageBuyOfferSuccess",
+            "offer": "manageOfferDeleted"
+          }
+        },
+        {
+          "_type": "manageSellOffer",
+          "manageSellOfferResult": {
+            "_type": "manageSellOfferSuccess",
+            "offer": {
+              "_type": "manageOfferCreated",
+              "offer": {
+                "flags": 0,
+                "price": 0.6756748734846684,
+                "amount": "4614942023",
+                "buying": {
+                  "issuer": "GBZVELEQD3WBN3R3VAG64HVBDOZ76ZL6QPLSFGKWPFED33Q3234NSLVR",
+                  "assetCode": "SLVR"
+                },
+                "offerId": "566924225",
+                "selling": "assetTypeNative",
+                "sellerId": "GBWEQO3QPKKC7W6UMK7BWNBHBLIL54MNI5MSOMRB3TURYWJQ64XD3EN3"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "feeCharged": "200"
+  },
+  "max_fee": "600",
+  "envelope": {
+    "tx": {
+      "fee": 600,
+      "memo": "memoNone",
+      "seqNum": "127076112217124056",
+      "operations": [
+        {
+          "_type": "manageBuyOffer",
+          "price": 0.0001,
+          "buying": "assetTypeNative",
+          "offerId": "566923926",
+          "selling": {
+            "issuer": "GBZVELEQD3WBN3R3VAG64HVBDOZ76ZL6QPLSFGKWPFED33Q3234NSLVR",
+            "assetCode": "SLVR"
+          },
+          "buyAmount": "0"
+        },
+        {
+          "_type": "manageSellOffer",
+          "price": 0.6756748734846684,
+          "amount": "4614942023",
+          "buying": {
+            "issuer": "GBZVELEQD3WBN3R3VAG64HVBDOZ76ZL6QPLSFGKWPFED33Q3234NSLVR",
+            "assetCode": "SLVR"
+          },
+          "offerId": "0",
+          "selling": "assetTypeNative"
+        }
+      ],
+      "timeBounds": {
+        "maxTime": "1620924703",
+        "minTime": "0"
+      },
+      "sourceAccount": "GBWEQO3QPKKC7W6UMK7BWNBHBLIL54MNI5MSOMRB3TURYWJQ64XD3EN3"
+    },
+    "signatures": [
+      {
+        "hint": "MPcuPQ==",
+        "signature": "y+JVu/VFhzAlM9IuzR87tgO0Oi3+YUK+s7e1ehMWEP7EoguLwCO7MAxPNZOqfeAomfSfsZU2JCUBj87MFsIJAQ=="
+      }
+    ]
+  },
+  "memo_type": "none",
+  "created_at": "2021-05-13T16:51:18Z",
+  "signatures": [
+    "y+JVu/VFhzAlM9IuzR87tgO0Oi3+YUK+s7e1ehMWEP7EoguLwCO7MAxPNZOqfeAomfSfsZU2JCUBj87MFsIJAQ=="
+  ],
+  "successful": true,
+  "fee_account": "GBWEQO3QPKKC7W6UMK7BWNBHBLIL54MNI5MSOMRB3TURYWJQ64XD3EN3",
+  "fee_charged": "200",
+  "ledger_attr": 35387664,
+  "valid_after": "1970-01-01T00:00:00Z",
+  "paging_token": "151988859562037248",
+  "valid_before": "2021-05-13T16:51:43Z",
+  "source_account": "GBWEQO3QPKKC7W6UMK7BWNBHBLIL54MNI5MSOMRB3TURYWJQ64XD3EN3",
+  "operation_count": 2,
+  "source_account_sequence": "127076112217124056"
+}

@@ -1,0 +1,53 @@
+{
+  "fee": 3840,
+  "out": [
+    {
+      "n": 0,
+      "addr": "115Wiw8sEW6FoLRK2W3AVPRLpYvMg9xjw7",
+      "type": 0,
+      "spent": false,
+      "value": 76770,
+      "script": "OP_DUP OP_HASH160 00da79b0795f1d570c46a66a1377536ac86c64e0 OP_EQUALVERIFY OP_CHECKSIG",
+      "tx_index": 4498387369866365,
+      "spending_outpoints": []
+    }
+  ],
+  "ver": 2,
+  "hash": "675dd66d5baab7e1a2e121a828cf218879cde8f6a5db99318eeca3f16913da7f",
+  "size": 191,
+  "time": 1620870813,
+  "inputs": [
+    {
+      "index": 0,
+      "script": "473044022063ab90ab4ea2446c308ce5e034c733e2413f77cbafb350b2a23f996a9b2e6f8c022021a39bf2e31d9e2464d2d2b960a77bd75f3dfc3d33166a7457d091a5c367b0950121037c5945f38ec5fce53e442a51cd8d1c6881e115f1b8ea9f44496ab52afd7ec817",
+      "witness": "",
+      "prev_out": {
+        "n": 0,
+        "addr": "14mg8Co2qKQueRAgh6JbSX8ihpau4zDMR8",
+        "type": 0,
+        "spent": true,
+        "value": 80610,
+        "script": "OP_DUP OP_HASH160 295b56c26578b1bcd3ed322ef08b18a4c76f8180 OP_EQUALVERIFY OP_CHECKSIG",
+        "tx_index": 5744044299769670,
+        "spending_outpoints": [
+          {
+            "n": 0,
+            "tx_index": 4498387369866365
+          }
+        ]
+      },
+      "sequence": 4294967293
+    }
+  ],
+  "vin_sz": 1,
+  "weight": 764,
+  "vout_sz": 1,
+  "total_in": 80610,
+  "tx_index": 4498387369866365,
+  "lock_time": 683369,
+  "total_out": 76770,
+  "relayed_by": "0.0.0.0",
+  "block_index": 683370,
+  "block_height": 683370,
+  "double_spend": false
+}

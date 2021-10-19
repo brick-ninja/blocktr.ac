@@ -1,0 +1,32 @@
+{
+  "users":4,
+  "filters":7,
+  "filters_being_notified":[],
+  "sinks":7,
+  "filter_sinks":5,
+  "txs":5308,
+  "txs_to_process":4979,
+  "txs_being_processed":[],
+  "filter_matches":131,
+  "non_notified_filter_matches":65,
+  "filters_violating_batch_sizes":[{"id":2,"num":"42"},{"id":1,"num":"22"}],
+  "notifications":5,
+  "meta":{
+    "fedora.notify_sinks.0.benchmark":"{\"started\":\"2021-04-01T20:13:31.032Z\",\"total\":15,\"avg\":5.47,\"updated\":\"2021-04-01T20:16:10.852Z\"}",
+    "fedora.notify_sinks.1.benchmark":"{\"started\":\"2021-04-01T20:13:31.127Z\",\"total\":37,\"avg\":213.87,\"updated\":\"2021-04-01T20:16:10.854Z\"}",
+    "fedora.notify_sinks.2.benchmark":"{\"started\":\"2021-04-01T20:13:31.158Z\",\"total\":14,\"avg\":5.27,\"updated\":\"2021-04-01T20:16:10.861Z\"}",
+    "fedora.notify_sinks.cleanup_matches.benchmark":"{\"started\":\"2021-04-01T20:13:31.135Z\",\"updated\":\"2021-04-01T20:13:31.350Z\"}",
+    "fedora.notify_sinks.cleanup_notifications.benchmark":"{\"started\":\"2021-04-01T20:13:31.025Z\",\"updated\":\"2021-04-01T20:13:31.202Z\"}",
+    "fedora.xrp_listen_to_txs.benchmark":"{\"started\":\"2021-04-01T20:12:18.894Z\",\"updated\":\"2021-04-01T20:19:00.952Z\",\"total\":644,\"avg\":\"1.43\"}",
+    "fedora.xrp_run_filters.0.benchmark":"{\"started\":\"2021-04-01T20:16:58.859Z\",\"total\":644,\"avg\":60.98,\"updated\":\"2021-04-01T20:17:01.926Z\"}",
+    "fedora.xrp_run_filters.1.benchmark":"{\"started\":\"2021-04-01T20:16:58.658Z\",\"total\":642,\"avg\":46.47,\"updated\":\"2021-04-01T20:17:01.929Z\"}",
+    "fedora.xrp_run_filters.2.benchmark":"{\"started\":\"2021-04-01T20:16:58.617Z\",\"total\":612,\"avg\":36.08,\"updated\":\"2021-04-01T20:17:01.936Z\"}",
+    "fedora.xrp_run_filters.cleanup_transactions.benchmark":"{\"started\":\"2021-04-01T20:16:58.687Z\",\"updated\":\"2021-04-01T20:16:58.858Z\"}",
+    "fedora.xrp_run_filters.reset_interval_tallies.benchmark":"{\"started\":\"2021-04-01T20:16:58.792Z\",\"updated\":\"2021-04-01T20:16:58.916Z\"}",
+    "total_notifications":"3",
+    "xlm_tx_cursor":"",
+    "xrp_filter_interval_reset":"2021-04-01T20:16:58.911Z",
+    "xrp_ledger_current":"62611555",
+    "xrp_ledger_processed":"62611555"
+  }
+}

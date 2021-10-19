@@ -1,0 +1,61 @@
+{
+    "engine_result": "tecNO_LINE_INSUF_RESERVE",
+    "engine_result_code": 126,
+    "engine_result_message": "No such line. Too little reserve to create it.",
+    "ledger_hash": "4688A68E6246FA3798CFAD07436CEB3BF68D401C5078B93D12514738C5DC33FA",
+    "ledger_index": 53387425,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rJoh2GLv4r33n8g1cK1efX19bLDKMqEaD",
+                        "Balance": "19974846",
+                        "Flags": 0,
+                        "OwnerCount": 2,
+                        "Sequence": 11
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "6402DE4CDEB4CB9D37F5F736E04F4AF11C7E6FF1A0E633C1D6958EBCA354A5B7",
+                    "PreviousFields": {
+                        "Balance": "19974861",
+                        "Sequence": 10
+                    },
+                    "PreviousTxnID": "A2686B7D66E5F5C8036F8D231D450D8E7DF6309C5CE79DB3D58F79ECB51E3C7F",
+                    "PreviousTxnLgrSeq": 36036854
+                }
+            }
+        ],
+        "TransactionIndex": 35,
+        "TransactionResult": "tecNO_LINE_INSUF_RESERVE"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rJoh2GLv4r33n8g1cK1efX19bLDKMqEaD",
+        "Fee": "15",
+        "Flags": 2147614720,
+        "LastLedgerSequence": 53387429,
+        "LimitAmount": {
+            "currency": "BTC",
+            "issuer": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+            "value": "1000000000"
+        },
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "gatehub",
+                    "MemoFormat": "text/plain",
+                    "MemoType": "client"
+                }
+            }
+        ],
+        "Sequence": 10,
+        "SigningPubKey": "026905FA526B359A5794452B13D9316090E478FD1F1C835A4282C7C836A171E29D",
+        "TransactionType": "TrustSet",
+        "TxnSignature": "3045022100B9F590AB93DA739A6E5C416C7E0BD188AD6750253124982A729C4D38E524229E02201A99CF0E4C93120379C8307DF028358645215D4DE994018A46AAB9AEA6C9CD8B",
+        "date": "2020-02-12T20:23:21.000Z",
+        "hash": "D0200A4BB97AF6F9C3CBF3CB59887DC8B8ED63952798CE28AA9E831482E4DA6F"
+    },
+    "type": "transaction",
+    "validated": true
+}

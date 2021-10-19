@@ -1,0 +1,174 @@
+{
+    "engine_result": "tecPATH_DRY",
+    "engine_result_code": 128,
+    "engine_result_message": "Path could not send partial amount.",
+    "ledger_hash": "0DD6DBD4A3F2B8A318DE16136327655125F04750CD6EC57C317919EC7EC476EB",
+    "ledger_index": 53388118,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "r9KG7Du7aFmABzMvDnwuvPaEoMu4Eurwok",
+                        "Balance": "4339644034",
+                        "Flags": 0,
+                        "OwnerCount": 6,
+                        "Sequence": 4987648
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "5A667CB5FBAB4143EDEFBD6EDDD4B6D19C905209C8EE16486D5D7CD6CB083E78",
+                    "PreviousFields": {
+                        "Balance": "4339644044",
+                        "Sequence": 4987647
+                    },
+                    "PreviousTxnID": "4113DE6E5CF45AEECC4C0D5A0C302CC36286B0B588C0EC53CD5C00A9C2E2910B",
+                    "PreviousTxnLgrSeq": 53388081
+                }
+            }
+        ],
+        "TransactionIndex": 37,
+        "TransactionResult": "tecPATH_DRY"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "r9KG7Du7aFmABzMvDnwuvPaEoMu4Eurwok",
+        "Amount": {
+            "currency": "GBP",
+            "issuer": "rHaans8PtgwbacHvXAL3u6TG28gTAtCwr8",
+            "value": "2000"
+        },
+        "Destination": "rHaans8PtgwbacHvXAL3u6TG28gTAtCwr8",
+        "Fee": "10",
+        "Flags": 458752,
+        "LastLedgerSequence": 53388167,
+        "Paths": [
+           [
+               {
+                    "currency": "USD",
+                    "issuer": "rP5ShE8dGBH6hHtNvRESdMceen36XFBQmh",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "account": "rpPv2Jqf4T3oQhrXAtgmnCk4tzSJSndoBs",
+                    "type": 1,
+                    "type_hex": "0000000000000001"
+                },
+               {
+                    "account": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "type": 1,
+                    "type_hex": "0000000000000001"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                }
+            ],
+           [
+               {
+                    "currency": "EUR",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "CNY",
+                    "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                }
+            ],
+           [
+               {
+                    "currency": "CNY",
+                    "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "EUR",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                }
+            ],
+           [
+               {
+                    "currency": "CNY",
+                    "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "USD",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                }
+            ],
+           [
+               {
+                    "currency": "USD",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "CNY",
+                    "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                }
+            ],
+           [
+               {
+                    "currency": "USD",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "EUR",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                }
+            ]
+        ],
+        "SendMax": "1999998000",
+        "Sequence": 4987647,
+        "SigningPubKey": "03580C9EBB7EEF804E020161E07DC8B904BDB718650F2DCF983E8638AB0EDFA415",
+        "TransactionType": "Payment",
+        "TxnSignature": "3044022022A1E0813A5A33318A824D193BB32A85F796F483742EBD474099DF03935DC44002206F1234EDE96944005BDE5BEEC43892E0BC7CA8AC50A810E1726913B74EC14D4C",
+        "date": "2020-02-12T21:06:30.000Z",
+        "hash": "44151A2AC1C08C0D51C67637607F3D9DA567AB114F80B1BD0372878C1D239D06"
+    },
+    "type": "transaction",
+    "validated": true
+}

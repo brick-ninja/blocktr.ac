@@ -1,0 +1,134 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "F008BAA0E62A70F17F0249C0ADFDAB084BAA32365AD0504666A9DF53441968B1",
+    "ledger_index": 53387182,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Flags": 0,
+                        "IndexNext": "0000000000000000",
+                        "IndexPrevious": "0000000000000000",
+                        "Owner": "rQ3fNyLjbvcDaPNS4EAJY8aT9zR3uGk17c",
+                        "RootIndex": "07CE63F6E62E095CAF97BC77572A203D75ECB68219F97505AC5DF2DB061C9D96"
+                    },
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "07CE63F6E62E095CAF97BC77572A203D75ECB68219F97505AC5DF2DB061C9D96"
+                }
+            },
+           {
+                "DeletedNode": {
+                    "FinalFields": {
+                        "Account": "rQ3fNyLjbvcDaPNS4EAJY8aT9zR3uGk17c",
+                        "BookDirectory": "623C4C4AD65873DA787AC85A0A1385FE6233B6DE100799474F0824DEFF691E98",
+                        "BookNode": "0000000000000000",
+                        "Flags": 0,
+                        "OwnerNode": "0000000000000000",
+                        "PreviousTxnID": "44661E545AC222960A36C3D5AE1FCC49444FDBEAE7FC238D8B7C0431A218A3C8",
+                        "PreviousTxnLgrSeq": 53387181,
+                        "Sequence": 28089397,
+                        "TakerGets": "18388934640",
+                        "TakerPays": {
+                            "currency": "CNY",
+                            "issuer": "rJ1adrpGS3xsnQMb9Cw54tWJVFPuSdZHK",
+                            "value": "42153.69043457167"
+                        }
+                    },
+                    "LedgerEntryType": "Offer",
+                    "LedgerIndex": "0C039534303973F75E75D6AEEE5C7528305BC8B19F7AB7A60C1F986D1CD9DCEC"
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rQ3fNyLjbvcDaPNS4EAJY8aT9zR3uGk17c",
+                        "Balance": "20037663202",
+                        "Flags": 0,
+                        "OwnerCount": 5,
+                        "Sequence": 28089402
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "47FE64F9223D604034486F4DA7A175D5DA7F8A096952261CF8F3D77B74DC4AFA",
+                    "PreviousFields": {
+                        "Balance": "20037663214",
+                        "Sequence": 28089401
+                    },
+                    "PreviousTxnID": "3C574CB53705A217C1EA63671152A52E676B21396FAC5C7EBC31CA25897EEB98",
+                    "PreviousTxnLgrSeq": 53387182
+                }
+            },
+           {
+                "DeletedNode": {
+                    "FinalFields": {
+                        "ExchangeRate": "4F0824DEFF691E98",
+                        "Flags": 0,
+                        "RootIndex": "623C4C4AD65873DA787AC85A0A1385FE6233B6DE100799474F0824DEFF691E98",
+                        "TakerGetsCurrency": "0000000000000000000000000000000000000000",
+                        "TakerGetsIssuer": "0000000000000000000000000000000000000000",
+                        "TakerPaysCurrency": "000000000000000000000000434E590000000000",
+                        "TakerPaysIssuer": "0360E3E0751BD9A566CD03FA6CAFC78118B82BA0"
+                    },
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "623C4C4AD65873DA787AC85A0A1385FE6233B6DE100799474F0824DEFF691E98"
+                }
+            },
+           {
+                "CreatedNode": {
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "623C4C4AD65873DA787AC85A0A1385FE6233B6DE100799474F08250FE4620FFF",
+                    "NewFields": {
+                        "ExchangeRate": "4F08250FE4620FFF",
+                        "RootIndex": "623C4C4AD65873DA787AC85A0A1385FE6233B6DE100799474F08250FE4620FFF",
+                        "TakerPaysCurrency": "000000000000000000000000434E590000000000",
+                        "TakerPaysIssuer": "0360E3E0751BD9A566CD03FA6CAFC78118B82BA0"
+                    }
+                }
+            },
+           {
+                "CreatedNode": {
+                    "LedgerEntryType": "Offer",
+                    "LedgerIndex": "BB82BB50144735549B3BC5E88A5775180755C21A9F98735A7F1E869E995E0172",
+                    "NewFields": {
+                        "Account": "rQ3fNyLjbvcDaPNS4EAJY8aT9zR3uGk17c",
+                        "BookDirectory": "623C4C4AD65873DA787AC85A0A1385FE6233B6DE100799474F08250FE4620FFF",
+                        "Sequence": 28089401,
+                        "TakerGets": "4023430726",
+                        "TakerPays": {
+                            "currency": "CNY",
+                            "issuer": "rJ1adrpGS3xsnQMb9Cw54tWJVFPuSdZHK",
+                            "value": "9223.916111109658"
+                        }
+                    }
+                }
+            }
+        ],
+        "TransactionIndex": 13,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rQ3fNyLjbvcDaPNS4EAJY8aT9zR3uGk17c",
+        "Fee": "12",
+        "Flags": 0,
+        "LastLedgerSequence": 53387184,
+        "OfferSequence": 28089397,
+        "Sequence": 28089401,
+        "SigningPubKey": "039451ECAC6D4EB75E3C926E7DC7BA7721719A1521502F99EC7EB2FE87CEE9E824",
+        "TakerGets": "4023430726",
+        "TakerPays": {
+            "currency": "CNY",
+            "issuer": "rJ1adrpGS3xsnQMb9Cw54tWJVFPuSdZHK",
+            "value": "9223.916111109658"
+        },
+        "TransactionType": "OfferCreate",
+        "TxnSignature": "3045022100CE35ADECE23FF77C4534F201B9F7DF70276E9A02DADED074796E84FEAC531EB40220736C2EF75A63DEF5AAA6B878260004D631C2D342D28F847DE3651FA9E87F8711",
+        "date": "2020-02-12T20:08:10.000Z",
+        "hash": "0895FE153C8E8BD35D3CB7FA13992E8C229031627C9E235E8645CB778B33C5B6",
+        "owner_funds": "19992663202"
+    },
+    "type": "transaction",
+    "validated": true
+}

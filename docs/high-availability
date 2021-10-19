@@ -1,0 +1,288 @@
+=========================================
+Describes setting up a pool of databases
+=========================================
+
+Following and adapting this guide:
+https://www.linode.com/docs/guides/create-a-highly-available-postgresql-cluster-using-patroni-and-haproxy/
+
+- ziti_db1:
+  - Deploy application as described in deploy document
+  - Edit pg_hba to add:
+    hostssl    all         all                 <DB1 IP>/32             md5
+    hostssl    all         all                 <HAPROXY1 IP>/32        md5
+    hostssl    all         all                 <HAPROXY2 IP>/32        md5
+    local      replication replica                                     md5
+    hostssl    replication replica             <DB2 IP>/32             md5
+    host       replication replica             127.0.0.1/32            md5
+    host       replication replica             ::1/128                 md5
+
+  - As postgres:
+    - mkdir /var/lib/pgsql/.postgresql
+    - cd /var/lib/pgsql/.postgresql
+    - ln -s /var/lib/pgsql/data/server.key postgresql.key
+    - ln -s /var/lib/pgsql/data/server.crt postgresql.crt
+    - ln -s /var/lib/pgsql/data/root.crt .
+
+  - systemctl reload postgresql
+  - As postgres
+    - createuser --interactive --pwprompt # answers: replica / <password> / <password> / n / n / n
+    - psql
+      - alter user postgres with password 'postgres';
+      - alter role replica with replication;
+
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<DB2 IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<HAPROXY IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<HAPROXY IP>/32" port protocol="tcp" port="8008" accept'
+  - firewall-cmd --reload
+
+- ziti_db2:
+  - dnf install postgresql-server
+  - scp the postgres@dnp_db1:~/.postgresql dir (contents not symlinks) to /var/lib/pgsql/.postgresql
+  - pg_basebackup -d "sslcert=./.postgresql/postgresql.crt sslkey=./.postgresql/postgresql.key sslrootcert=./.postgresql/root.crt" -h <DB1 IP> -p 5432 -U replica -D /var/lib/pgsql/data/ -Fp -Xs -R
+  - Edit postgresql.conf to listen on <DB2 IP>
+  - Edit pg_hba to add:
+    hostssl    all         all                 <DB2 IP>/32             md5
+    hostssl    all         all                 <HAPROXY1 IP>/32        md5
+    hostssl    all         all                 <HAPROXY2 IP>/32        md5
+    local      replication replica                                     md5
+    hostssl    replication replica             <DB1 IP>/32             md5
+    host       replication replica             127.0.0.1/32            md5
+    host       replication replica             ::1/128                 md5
+
+  - As postgres:
+    - mkdir /var/lib/pgsql/.postgresql
+    - cd /var/lib/pgsql/.postgresql
+    - rm *
+    - ln -s /var/lib/pgsql/data/server.key postgresql.key
+    - ln -s /var/lib/pgsql/data/server.crt postgresql.crt
+    - ln -s /var/lib/pgsql/data/root.crt .
+
+  - sudo systemctl start postgresql
+  - As postgres
+    - createuser --interactive --pwprompt # answers: replica / <password> / <password> / n / n / n
+    - psql
+      - alter user postgres with password 'postgres';
+      - alter role replica with replication;
+
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<DB1 IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<HAPROXY IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<HAPROXY IP>/32" port protocol="tcp" port="8008" accept'
+  - firewall-cmd --reload
+
+- Ensure db servers are running on different hosts (support ticket)
+  - https://www.linode.com/community/questions/17901/can-servers-in-the-same-datacenter-be-prevented-from-sharing-hardware
+
+- dnp_config1 (config server):
+  - set dnp_config in /etc/hosts
+
+  - wget https://github.com/etcd-io/etcd/releases/download/v3.2.32/etcd-v3.2.32-linux-amd64.tar.gz
+  - mkdir /etcd
+  - sudo tar xzvf etcd-v3.2.32-linux-amd64.tar.gz -C /etcd --strip-components=1
+  - useradd etcd
+  - chown -R etcd.etcd /etcd
+  - usermod -d /etcd/ etcd
+
+  - As etcd:
+    - mkdir ca
+    - cd ca
+    - openssl genrsa -des3 -out ca.key 2048
+    - openssl rsa -in ca.key -out ca.key
+    - openssl req -new -key ca.key -days 3650 -out ca.crt -x509 -subj '/CN=dnp_config' 
+    - openssl req -new -nodes -keyout dnp_config.key -out dnp_config.csr -subj '/CN=dnp_config'
+    - openssl x509 -req -days 3650 -in dnp_config.csr -CA ca.crt -CAkey ca.key -out dnp_config.crt -CAcreateserial
+
+  - Create /lib/systemd/system/etcd.service:
+    [Unit]
+    Description=ETCD Service
+    After=syslog.target network.target
+
+    [Service]
+    Type=simple
+
+    User=etcd
+    Group=etcd
+
+    EnvironmentFile=/etc/default/etcd
+    WorkingDirectory=/etcd
+    ExecStart=/etcd/etcd
+    KillMode=process
+    TimeoutSec=30
+    Restart=no
+
+    [Install]
+    WantedBy=multi-user.target
+
+  - Create /etc/default/etcd.conf
+  ETCD_LISTEN_PEER_URLS="http://<CONFIG IP>:2380"
+  ETCD_LISTEN_CLIENT_URLS="http://127.0.0.1:2379,https://<CONFIG IP>:2379"
+  ETCD_INITIAL_ADVERTISE_PEER_URLS="https://dnp_config:2380"
+  ETCD_INITIAL_CLUSTER="etcd0=https://<CONFIG IP>:2380,"
+  ETCD_ADVERTISE_CLIENT_URLS="https://dnp_config:2379"
+  ETCD_INITIAL_CLUSTER_TOKEN="cluster1"
+  ETCD_INITIAL_CLUSTER_STATE="new"
+  ETCD_CERT_FILE="/etcd/ca/dnp_config.crt"
+  ETCD_KEY_FILE="/etcd/ca/dnp_config.key"
+  ETCD_TRUSTED_CA_FILE="/etcd/ca/ca.crt"
+  ETCD_CLIENT_CERT_AUTH="true"
+
+  - chown  etcd.etcd /etc/etcd.conf
+
+  - systemctl daemon-reload
+  - disable selinux in /etc/selinux/config
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<DB1 IP>/32" port protocol="tcp" port="2379" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<DB2 IP>/32" port protocol="tcp" port="2379" accept'
+  - firewall-cmd --reload
+
+- ziti_db1 & ziti_db2:
+  - set dnp_config in /etc/hosts
+  - dnf install gcc python3-devel
+  - as postgres user:
+    - pip3 install --user patroni
+    - pip3 install --user psycopg2-binary
+    - pip3 install --user python-etcd
+
+    - openssl genrsa -des3 -out etcd.key 2048 # any passphrase
+    - openssl rsa -in etcd.key -out etcd.key # remove passphrase
+    - openssl req -new -key etcd.key -out dnp_config.csr -subj '/CN=dnp_config'
+    - scp dnp_config.csr dnp_config1:~/
+    - <on dnp_config1>:  openssl x509 -req -days 3650 -in dnp_config.csr -CA /etcd/ca/ca.crt -CAkey /etcd/ca/ca.key -out dnp_config.crt -CAcreateserial
+    - scp dnp_config1:~/dnp_config.crt .
+    - scp dnp_config1:/etcd/ca/ca.crt .
+
+  - Create /etc/patroni.yml:
+    scope: postgres
+    namespace: /ziti/
+    name: postgresql<N> # where N is 1 on db1, 2 on db2, etc
+
+    restapi:
+        listen: <PRIVATE IP>:8008
+        connect_address: <PRIVATE IP>:8008
+
+    etcd:
+        host: dnp_config:2379
+        protocol: https
+        cacert: /var/lib/pgsql/ca.crt
+        key: /var/lib/pgsql/etcd.key
+        cert: /var/lib/pgsql/etcd.crt
+
+    bootstrap:
+        dcs:
+            ttl: 30
+            loop_wait: 10
+            retry_timeout: 10
+            maximum_lag_on_failover: 1048576
+            postgresql:
+                parameters:
+                    wal_keep_segments: 100
+                    wal_keep_size: 16000
+                    ssl: on
+                    ssl_ca_file: /var/lib/pgsql/data/root.crt
+                    ssl_cert_file: /var/lib/pgsql/data/root.crt
+                    ssl_key_file: /var/lib/pgsql/data/server.key
+
+
+        initdb:
+        - encoding: UTF8
+        - data-checksums
+
+        pg_hba:
+        - hostssl replica replicator 127.0.0.1/32 md5
+        - hostssl replica replicator <ZITI_DB1 IP>/32 md5 [clientcert=1 for DB2]
+        - hostssl replica replicator <ZITI_DB2 IP>/32 md5 [clientcert=1 for DB1]
+        - hostssl all all <ZITI_DB1|2 IP>/32 md5 clientcert=1 # 1 | 2 corresponding to DB1 | DB2
+        - hostssl all all <HAPROXY1 IP>/32 md5 clientcert=1
+
+    postgresql:
+        listen: <PRIVATE IP>:5432
+        connect_address: <PRIVATE IP>:5432
+        data_dir: /uar/lib/pgsql/data
+        pgpass: /var/lib/pgsql/.pgpass
+        authentication:
+            replication:
+                username: <replication user>
+                password: <replication pass>
+            superuser:
+                username: postgres
+                password: <postgres password>
+        parameters:
+            ssl: on
+            ssl_ca_file: /var/lib/pgsql/data/root.crt
+            ssl_cert_file: /var/lib/pgsql/data/root.crt
+            ssl_key_file: /var/lib/pgsql/data/server.key
+
+
+    tags:
+        nofailover: false
+        noloadbalance: false
+        clonefrom: false
+        nosync: false
+
+  - chown postgres.postgres patroni.yml
+
+  - Create file /lib/systemd/system/patroni.service
+    [Unit]
+    Description=Runners to orchestrate a high-availability PostgreSQL
+    After=syslog.target network.target
+
+    [Service]
+    Type=simple
+
+    User=postgres
+    Group=postgres
+
+    ExecStart=/var/lib/pgsql/.local/bin/patroni /etc/patroni.yml
+
+    KillMode=process
+
+    TimeoutSec=30
+
+    Restart=no
+
+    [Install]
+    WantedBy=multi-user.targ
+
+  - systemctl enable patroni
+  - systemctl start  patroni
+  - systemctl status patroni
+
+- On haproxy servers:
+  - disable selinux in /etc/selinux/config
+  - dnf install haproxy
+  - Edit /etc/haproxy/haproxy.cfg:
+    defaults
+      mode tcp
+
+    listen stats
+      mode http
+      bind *:7000
+      stats enable
+      stats uri /
+
+    # remove 'fontend main' section
+    # remove 'backend static' section
+    # remove 'backend app' section
+
+    listen postgres
+        bind *:5000
+        option httpchk
+        http-check expect status 200
+        default-server inter 3s fall 3 rise 2 on-marked-down shutdown-sessions
+        server postgresql_<DB1 IP>_5432 <DB1 IP>:5432 maxconn 100 check port 8008
+        server postgresql_<DB2 IP>_5432 <DB1 IP>:5432 maxconn 100 check port 8008
+
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<API IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<WORKER1 IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<WORKER2 IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="<BAK1 IP>/32" port protocol="tcp" port="5432" accept'
+  - firewall-cmd --reload
+  - systemctl enable haproxy
+  - systemctl start haproxy
+
+- Configure haproxy servers to share IP (test latency of switch-over)
+- Ensure haproxy servers are running on different hosts (support ticket)
+
+==========================================
+Describes setting up a balance web cluster
+==========================================
+
+- ...

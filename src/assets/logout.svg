@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Shape@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="settings-popup" transform="translate(-29.000000, -89.000000)" fill="#0091FF" fill-rule="nonzero">
+            <g id="popup" transform="translate(12.000000, 20.000000)">
+                <g id="Group">
+                    <path d="M24.09,81.59 L25.5,83 L30.5,78 L25.5,73 L24.09,74.41 L26.67,77 L17,77 L17,79 L26.67,79 L24.09,81.59 Z M33,69 L19,69 C17.89,69 17,69.9 17,71 L17,75 L19,75 L19,71 L33,71 L33,85 L19,85 L19,81 L17,81 L17,85 C17,86.1 17.89,87 19,87 L33,87 C34.1,87 35,86.1 35,85 L35,71 C35,69.9 34.1,69 33,69 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

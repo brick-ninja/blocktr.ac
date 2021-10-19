@@ -1,0 +1,56 @@
+[
+  {
+    "id" : 1,
+    "name" : "From My Account",
+    "active" : true,
+    "disabled" : false,
+    "notifying" : false,
+    "notified_at" : "2021-03-29T12:06:00Z",
+    "total_matches" : 5,
+    "matches_in_interval" : 3,
+    "interval_reset_at" : "2021-03-29T12:05:00Z",
+    "blockchain" : "xrp",
+    "jsonpath" : "$..[?(@.Account == 'rEB3GQRkiLcx4UpGhjUkTkKyDGUeKhVkx8')]",
+    "Sinks" : [
+      {
+        "active" : true,
+        "type" : "email",
+        "target" : "demo@blocktr.ac"
+      },
+
+      {
+        "active" : true,
+        "type" : "sms",
+        "target" : "1112223333"
+      }
+    ]
+  },
+
+  {
+    "id" : 2,
+    "name" : "To Whale Account",
+    "active" : true,
+    "disabled" : false,
+    "notifying" : false,
+    "notified_at" : "2021-03-29T11:35:16Z",
+    "total_matches" : 2,
+    "matches_in_interval" : 0,
+    "interval_reset_at" : "2021-03-29T11:00:02Z",
+    "blockchain" : "xrp",
+    "jsonpath" : "$..[?(@.Destination == 'rMQ98K56yXJbDGv49ZSmW51sLn94Xe1mu1')]"
+  },
+
+  {
+    "id" : 3,
+    "name" : "To an Account",
+    "active" : true,
+    "disabled" : false,
+    "notifying" : false,
+    "notified_at" : "2021-02-19T21:01:53Z",
+    "total_matches" : 50,
+    "matches_in_interval" : 3,
+    "interval_reset_at" : "2021-02-14T00:00:59Z",
+    "blockchain" : "xlm",
+    "jsonpath" : "$..[?(@._type == 'payment' && @.destination == 'GALC6W3IIYMJ3Q5BL7TECTEW5JAC7QIB4FB2QWCAV2IKFBE4MYWEITEQ')]"
+  }
+]

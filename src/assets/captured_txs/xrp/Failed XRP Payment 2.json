@@ -1,0 +1,50 @@
+{
+    "engine_result": "tecUNFUNDED_PAYMENT",
+    "engine_result_code": 104,
+    "engine_result_message": "Insufficient XRP balance to send.",
+    "ledger_hash": "6B30CEF0F7143AE509B506319B18429514546EF7866A0F75CCFB7C01F112EABC",
+    "ledger_index": 53388090,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "raWCGPPHBoYL58qsvovMkbuHcTHD39TPgU",
+                        "Balance": "21999820",
+                        "Flags": 0,
+                        "OwnerCount": 0,
+                        "Sequence": 16
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "600B9E96EF753E6B797970B7BA659323B09AE7789FA3C3CDE828FB54A21955D4",
+                    "PreviousFields": {
+                        "Balance": "21999832",
+                        "Sequence": 15
+                    },
+                    "PreviousTxnID": "BB6B7E6D705FF3A370FBEA781D99A3E72AA1D2BF0C369ACF58514EFEFFBB3CB3",
+                    "PreviousTxnLgrSeq": 53388050
+                }
+            }
+        ],
+        "TransactionIndex": 34,
+        "TransactionResult": "tecUNFUNDED_PAYMENT"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "raWCGPPHBoYL58qsvovMkbuHcTHD39TPgU",
+        "Amount": "21000000",
+        "Destination": "rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg",
+        "DestinationTag": 241896167,
+        "Fee": "12",
+        "Flags": 2147483648,
+        "LastLedgerSequence": 53388188,
+        "Sequence": 15,
+        "SigningPubKey": "036037EFE8D30BFB0349321097A5C53E35B551E9CEB7D53C32017C750039677DFE",
+        "TransactionType": "Payment",
+        "TxnSignature": "304402200D3751E6B5AD8D2CABC3D70065B6B4FFF0C11B47E14CFAA85A9B43C8BA840418022014432B21E88D46D4D75371006FF91EF87B3593234DDD3153305BB1BDFE3C8BDA",
+        "date": "2020-02-12T21:04:41.000Z",
+        "hash": "511FD25FC5B7F01EB5AC2D6278B2EE2D20A6064A115C065E0D7D1F62CD292663"
+    },
+    "type": "transaction",
+    "validated": true
+}

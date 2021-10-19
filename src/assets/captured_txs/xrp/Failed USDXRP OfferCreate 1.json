@@ -1,0 +1,62 @@
+{
+    "engine_result": "tecINSUF_RESERVE_OFFER",
+    "engine_result_code": 123,
+    "engine_result_message": "Insufficient reserve to create offer.",
+    "ledger_hash": "BCF197D11B2F9979C3B750C0C8AFFB4AC4F7786C947D4DDB0563CBADC680614D",
+    "ledger_index": 53387755,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rM4uM2JoxoLbJ53rzQeoBE5aKQtc8jkUZE",
+                        "Balance": "23726386",
+                        "Flags": 0,
+                        "OwnerCount": 0,
+                        "Sequence": 223
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "91C0B678309AEA753F792792C1128898315D355E59E87EFB7F66CA4C961162B2",
+                    "PreviousFields": {
+                        "Balance": "23726398",
+                        "Sequence": 222
+                    },
+                    "PreviousTxnID": "03E1E0A316AEC4548648A2529C66EFE6FCFC6221F539D1DC96CCA2AD569C1480",
+                    "PreviousTxnLgrSeq": 53387738
+                }
+            }
+        ],
+        "TransactionIndex": 28,
+        "TransactionResult": "tecINSUF_RESERVE_OFFER"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rM4uM2JoxoLbJ53rzQeoBE5aKQtc8jkUZE",
+        "Fee": "12",
+        "Flags": 2147483648,
+        "LastLedgerSequence": 53387757,
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "rm-1.2.4",
+                    "MemoType": "client"
+                }
+            }
+        ],
+        "Sequence": 222,
+        "SigningPubKey": "0349E75F786726246526C55462CD3FAC04C80271C2FFC2AACF1A47A92D763D2DEE",
+        "TakerGets": "3726183",
+        "TakerPays": {
+            "currency": "USD",
+            "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+            "value": "1.1284"
+        },
+        "TransactionType": "OfferCreate",
+        "TxnSignature": "3045022100D36D9A85EC352CF4F49B9307F5D4865944281F5D09E9520EAA0A10FAD54E9DFB02205A2E6FD2B87BC972258BE97DED3F93C9FED032D4CCF6255E7E84988675F849EC",
+        "date": "2020-02-12T20:43:42.000Z",
+        "hash": "0E668F7620732871876BE09D048E57EE0D7C5FCB0DDE40AC5C8128D8E101CB00",
+        "owner_funds": "3726386"
+    },
+    "type": "transaction",
+    "validated": true
+}

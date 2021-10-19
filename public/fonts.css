@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("~@/assets/fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("~@/assets/fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url("~@/assets/fonts/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("~@/assets/fonts/Inter-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Semi Bold";
+  src: url("~@/assets/fonts/Inter-SemiBold.woff2") format("woff2");
+}

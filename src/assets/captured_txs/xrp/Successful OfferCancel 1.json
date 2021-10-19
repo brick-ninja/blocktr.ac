@@ -1,0 +1,48 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "B88EF46443263E3862306631E64F4358F90DCC153A5B4A71FD66A9C183D12B03",
+    "ledger_index": 53387887,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rMBzp8CgpE441cp5PVyA9rpVV7oT8hP3ys",
+                        "Balance": "89020011940",
+                        "Flags": 1048576,
+                        "OwnerCount": 5,
+                        "RegularKey": "r9MXEVsXGL8jyngy1fnKLcHj7mdu8TWPyC",
+                        "Sequence": 5491874
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "9EB65374048F2AED1995A6725D4234545432083B0C5728627E06443A8E1F4C98",
+                    "PreviousFields": {
+                        "Balance": "89020011950",
+                        "Sequence": 5491873
+                    },
+                    "PreviousTxnID": "8859641D51022D091395A6114E8BBAD700D7E4EF76E310AC66C7F290BC439AA6",
+                    "PreviousTxnLgrSeq": 53387887
+                }
+            }
+        ],
+        "TransactionIndex": 28,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rMBzp8CgpE441cp5PVyA9rpVV7oT8hP3ys",
+        "Fee": "10",
+        "Flags": 0,
+        "OfferSequence": 5491847,
+        "Sequence": 5491873,
+        "SigningPubKey": "02D143712AFEF42302373B4D23E794F01F7BD296943E10E146D8E9C129D5DD9D43",
+        "TransactionType": "OfferCancel",
+        "TxnSignature": "30450221008C41F0C19B05540CE90CC0CF63274DF85C85B4103DA6436F9EA65B6B39A0074202207CE3C70F69BE9509F541ADF0B53695C54BCBEAFFDA90D4D966F05C994A468FD9",
+        "date": "2020-02-12T20:51:51.000Z",
+        "hash": "AE86C27DED14424F86C9D1FF8543903EE911F561AF50E995F914B0AC1556EC6D"
+    },
+    "type": "transaction",
+    "validated": true
+}

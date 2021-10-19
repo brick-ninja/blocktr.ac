@@ -1,0 +1,71 @@
+{ "engine_result": "tesSUCCESS",
+  "engine_result_code": 0,
+  "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+  "ledger_hash": "48C9851693AFEA312C3E9E5C93ABA7B4DCF9C424A7A4F413D51C40DD82F65030",
+  "ledger_index": 6326848,
+  "meta":
+   { "AffectedNodes":
+      [ { "ModifiedNode":
+           { "FinalFields":
+              { "Flags": 0,
+                "Owner": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+                "RootIndex": "02FF860ECCA4B9998F125E6DB44B5D81974DFE9A42B7DE06C7E8D84A7BCD7DF7" },
+             "LedgerEntryType": "DirectoryNode",
+             "LedgerIndex": "02FF860ECCA4B9998F125E6DB44B5D81974DFE9A42B7DE06C7E8D84A7BCD7DF7" } },
+        { "DeletedNode":
+           { "FinalFields":
+              { "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+                "Amount": "5000000",
+                "CancelAfter": 640308960,
+                "Destination": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+                "DestinationNode": "0000000000000000",
+                "FinishAfter": 640308900,
+                "Flags": 0,
+                "OwnerNode": "0000000000000000",
+                "PreviousTxnID": "C65BC97543C46F00C7DAF3266B46640587BC2B0FB6726208AE65CC5258A115E9",
+                "PreviousTxnLgrSeq": 6326781 },
+             "LedgerEntryType": "Escrow",
+             "LedgerIndex": "41D7F205B07E18A8E7861FA1D8CE385279487EBD143C72C618EDF3976FE05F01" } },
+        { "ModifiedNode":
+           { "FinalFields":
+              { "Flags": 0,
+                "Owner": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+                "RootIndex": "4985EC0BE703633596CA9DEA785C14975F3061370131CEBABDBFF3E537EDD325" },
+             "LedgerEntryType": "DirectoryNode",
+             "LedgerIndex": "4985EC0BE703633596CA9DEA785C14975F3061370131CEBABDBFF3E537EDD325" } },
+        { "ModifiedNode":
+           { "FinalFields":
+              { "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+                "Balance": "999999976",
+                "Flags": 0,
+                "OwnerCount": 0,
+                "Sequence": 3 },
+             "LedgerEntryType": "AccountRoot",
+             "LedgerIndex": "C39E6BD7E8EC0E2104B99909A3B6DFFDFB7995A9890E5CFB17A909C8188D280A",
+             "PreviousFields": { "Balance": "994999988", "OwnerCount": 1, "Sequence": 2 },
+             "PreviousTxnID": "C65BC97543C46F00C7DAF3266B46640587BC2B0FB6726208AE65CC5258A115E9",
+             "PreviousTxnLgrSeq": 6326781 } },
+        { "ModifiedNode":
+           { "LedgerEntryType": "AccountRoot",
+             "LedgerIndex": "FD92890318922B78EE146AF4AE1BA8E1B944BD28ED286DB937692821A18471EA",
+             "PreviousTxnID": "C65BC97543C46F00C7DAF3266B46640587BC2B0FB6726208AE65CC5258A115E9",
+             "PreviousTxnLgrSeq": 6326781 } } ],
+     "TransactionIndex": 0,
+     "TransactionResult": "tesSUCCESS" },
+  "status": "closed",
+  "transaction":
+   { "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+     "Fee": "12",
+     "LastLedgerSequence": 6326851,
+     "OfferSequence": 1,
+     "Owner": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+     "Sequence": 2,
+     "SigningPubKey":
+      "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+     "TransactionType": "EscrowCancel",
+     "TxnSignature": "3045022100992B3C988480465657AEDFFD3D513F7ADFA3EFE0EA8F5CB2E93269EBA90A1121022073E4DA4268C7182739B722A06E20A60F4A9326ACE2A0A9170FC6D562ECB8D489",
+     "date": 640309052,
+     "hash": "571A0D7B6BD699127F214963CB1423EF82ABA6CA3D17E194BCE1B800D0208225" },
+  "type": "transaction",
+  "validated": true
+}

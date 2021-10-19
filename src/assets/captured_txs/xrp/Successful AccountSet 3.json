@@ -1,0 +1,49 @@
+{
+  "engine_result": "tesSUCCESS",
+  "engine_result_code": 0,
+  "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+  "ledger_hash": "4AB7523A46D8BD606E8C1AAF283B8C74380294A9DA76F6DC3AEE3B6A418C8684",
+  "ledger_index": 6331325,
+  "meta": {
+    "AffectedNodes": [
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Balance": "183989292",
+            "Flags": 131072,
+            "OwnerCount": 4,
+            "Sequence": 24
+          },
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "C39E6BD7E8EC0E2104B99909A3B6DFFDFB7995A9890E5CFB17A909C8188D280A",
+          "PreviousFields": {
+            "Balance": "183989304",
+            "Flags": 0,
+            "Sequence": 23
+          },
+          "PreviousTxnID": "AEBDE6C3916733444DE27FB52D81179CDD51D4A8D119938B2E2A13847AA78951",
+          "PreviousTxnLgrSeq": 6331074
+        }
+      }
+    ],
+    "TransactionIndex": 0,
+    "TransactionResult": "tesSUCCESS"
+  },
+  "status": "closed",
+  "transaction": {
+    "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+    "Fee": "12",
+    "Flags": 2147483648,
+    "LastLedgerSequence": 6331328,
+    "Sequence": 23,
+    "SetFlag": 1,
+    "SigningPubKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+    "TransactionType": "AccountSet",
+    "TxnSignature": "30440220368AAF2CB4A40FCE4DB39760BA917C95183E6F598615B2CEA11B25DC6081B4F502205827DEF95B6D3782E1B29596B611BBA6C3DF61893CEA9F6B223737D2A5185C64",
+    "date": 640322932,
+    "hash": "2F0E1FF11044A86C81DDFAA49CCE5AC4DC854C77C28BE74EE095B03D379DA73A"
+  },
+  "type": "transaction",
+  "validated": true
+}

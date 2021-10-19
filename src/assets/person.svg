@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>user@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01---live-transactions" transform="translate(-535.000000, -431.000000)" fill="#748693" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(320.000000, 234.000000)">
+                <g id="Row" transform="translate(0.000000, 188.000000)">
+                    <g id="person_pin-24px" transform="translate(213.000000, 8.000000)">
+                        <path d="M10,16.6666667 C14.1421356,16.6666667 17.5,13.3088023 17.5,9.16666667 C17.5,5.02453104 14.1421356,1.66666667 10,1.66666667 C5.85786438,1.66666667 2.5,5.02453104 2.5,9.16666667 C2.5,13.3088023 5.85786438,16.6666667 10,16.6666667 Z M10,3.33333333 C11.3833333,3.33333333 12.5,4.45 12.5,5.83333333 C12.5,7.21666667 11.3833333,8.33333333 10,8.33333333 C8.61666667,8.33333333 7.5,7.21666667 7.5,5.83333333 C7.5,4.45 8.61666667,3.33333333 10,3.33333333 Z M10,15.25 C7.91666667,15.25 6.075,14.1833333 5,12.5666667 C5.025,10.9083333 8.33333333,10 10,10 C11.6583333,10 14.975,10.9083333 15,12.5666667 C13.925,14.1833333 12.0833333,15.25 10,15.25 Z" id="user"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

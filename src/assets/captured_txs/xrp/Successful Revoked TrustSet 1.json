@@ -1,0 +1,130 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "69F882C3D9EDBE217BB208A77146FA0C95678184B36B810626A223C29A25DFE1",
+    "ledger_index": 53388306,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "2FAF05CA131C0C89B113880C030C36240B37EBA5AEB681323DD42054DC928F47",
+                    "PreviousTxnID": "F57FA4A4C28C3BA9CC94D2D3848912914435A442341B6955709D15B43F83CEF0",
+                    "PreviousTxnLgrSeq": 53385766
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rQnmUuDnSEthHLKBU4oVyZM8Xdxx1wvzfW",
+                        "Balance": "22714851",
+                        "Flags": 0,
+                        "OwnerCount": 0,
+                        "Sequence": 7
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "47F7965AFC09A3D1BCA660AC585212BDB3B281D523898D2FB1CDAABADCEEBFF0",
+                    "PreviousFields": {
+                        "Balance": "22714866",
+                        "OwnerCount": 1,
+                        "Sequence": 6
+                    },
+                    "PreviousTxnID": "758792B6D3CA24CA17269489285B3AAAA2EEAF454758E7EF100CCDD0B2EDEAA5",
+                    "PreviousTxnLgrSeq": 53388302
+                }
+            },
+           {
+                "DeletedNode": {
+                    "FinalFields": {
+                        "Flags": 0,
+                        "Owner": "rQnmUuDnSEthHLKBU4oVyZM8Xdxx1wvzfW",
+                        "RootIndex": "5D50F2B45B1B6642C02A47E44A248E89CA1C33E6A190E5AFB07DA641C2695828"
+                    },
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "5D50F2B45B1B6642C02A47E44A248E89CA1C33E6A190E5AFB07DA641C2695828"
+                }
+            },
+           {
+                "DeletedNode": {
+                    "FinalFields": {
+                        "Balance": {
+                            "currency": "BTC",
+                            "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                            "value": "0"
+                        },
+                        "Flags": 2097152,
+                        "HighLimit": {
+                            "currency": "BTC",
+                            "issuer": "rQnmUuDnSEthHLKBU4oVyZM8Xdxx1wvzfW",
+                            "value": "0"
+                        },
+                        "HighNode": "0000000000000000",
+                        "LowLimit": {
+                            "currency": "BTC",
+                            "issuer": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+                            "value": "0"
+                        },
+                        "LowNode": "0000000000000E63",
+                        "PreviousTxnID": "758792B6D3CA24CA17269489285B3AAAA2EEAF454758E7EF100CCDD0B2EDEAA5",
+                        "PreviousTxnLgrSeq": 53388302
+                    },
+                    "LedgerEntryType": "RippleState",
+                    "LedgerIndex": "61CF464B5224193010F503ADB8297BA46D12E0AD525ECB22A0F37CE3D5746CA4",
+                    "PreviousFields": {
+                        "Flags": 2228224,
+                        "HighLimit": {
+                            "currency": "BTC",
+                            "issuer": "rQnmUuDnSEthHLKBU4oVyZM8Xdxx1wvzfW",
+                            "value": "1000000000"
+                        }
+                    }
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Flags": 0,
+                        "IndexNext": "0000000000000E64",
+                        "IndexPrevious": "0000000000000E62",
+                        "Owner": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+                        "RootIndex": "AC7D605DC4B0E09BB9BA05DF47C1D6CFC01688603B14D86BB0E3896B910EF4B4"
+                    },
+                    "LedgerEntryType": "DirectoryNode",
+                    "LedgerIndex": "AFC89AB8AA4EB73D63C30050EB6F68468854D003470C929B7D446217D4EF8881"
+                }
+            }
+        ],
+        "TransactionIndex": 26,
+        "TransactionResult": "tesSUCCESS"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rQnmUuDnSEthHLKBU4oVyZM8Xdxx1wvzfW",
+        "Fee": "15",
+        "Flags": 2147614720,
+        "LastLedgerSequence": 53388310,
+        "LimitAmount": {
+            "currency": "BTC",
+            "issuer": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+            "value": "0"
+        },
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "gatehub",
+                    "MemoFormat": "text/plain",
+                    "MemoType": "client"
+                }
+            }
+        ],
+        "Sequence": 6,
+        "SigningPubKey": "02D7C6BB7C81E1CA36253225CEF46F5DF516A29A0DF1459D9730756F0394798E71",
+        "TransactionType": "TrustSet",
+        "TxnSignature": "3045022100DDE6A57FD013C083290C18E68ADFF5A292CF361BE17F5EB9DA889AD03E550FD502200FF62131444161864A4FE58C1B99F482CF8884F9F39A6251653D6603AC8D7852",
+        "date": "2020-02-12T21:18:12.000Z",
+        "hash": "0BE2ACFBB3D39095C7F9C6F1972DEEF61BA44AE65DFA7D7A36990B2841AF619B"
+    },
+    "type": "transaction",
+    "validated": true
+}

@@ -1,0 +1,89 @@
+Guide on adding support for another Blockchain
+==============================================
+
+=====
+
+ziti:
+- create new workers/listen_to_txs/<blockchain>.js module,
+  implement initialize_<blockchain>, shutdown_<blockchain>,
+  and check_tx_sync methods (export)
+
+- implement/stub out tests for these
+
+- create new workers/listen_to_txs/<blockchain>_mainnet.js module,
+  import <blockchain>.js module and  export initialize, shutdown
+  methods
+
+- Edit config/network.js
+  - stub _network definition
+  - add network uri(s) for network
+  - add entry to _blockchains
+  - add entry to _app_name
+
+- Add seeders to initialize needed state variable Meta (if necessary)
+  - processed & current blocks, transaction cursor, iterator/checkpoint
+
+- Verify running listen_to_txs w/ new blockchain works
+  - Transactions are imported into database
+  - Metadata fields are updated appropriately
+  - Errors are accounted for, processing can recover after downtime
+
+- Create seeders to for blockchain specific templates
+  - Define under seeders/initial-templates directory
+  - Import into seeders/20200119132320-initial-templates.js and add to all_templates
+
+- Extend scripts/template.js to support listening to new blockchain
+
+- Verify templates work properly to filter blockchain transactions
+  - use template script to test
+
+======
+
+zitui:
+
+- Edit config/network.js
+  - stub NETWORK definition
+  - add entry to NETWORK_URIS
+  - add entry to DEFAULT_NETWORKS
+  - add entry to BLOCKCHAINS
+  - add entry to APP_NAMES
+  - add entry to APP_NAME_EMPHASIS
+
+- Define module under src/plugins/network_connection/. Implement:
+  - prepare_static_tx
+  - prepare_streamed_tx
+  - init
+  - reset
+  - connect
+  - validate_address
+  - retrieve_account
+  - retrieve_tx
+  - stream_txs
+  - stop_streaming_txs
+
+- Import network_connection module into src/plugins/network_connection.js
+  - Add to modules object
+
+- Edit src/config/txs
+  - add entry to ENABLE_TX_CATEGORIES
+  - add entries to tx_category_for_type (if tx categories enabled)
+
+- Edit src/mixins/blockchain
+  - define <blockchain>_configured
+  - define <blockchain>_selected
+  - define <blockchain>_active
+
+- Define src/components/current_amount/<BLOCKCHAIN>.vue
+
+- Edit src/components/TxSummary
+  - Handle blockchain
+
+- Define src/components/tx_summaries/<BLOCKCHAIN>.vue
+  - as well as src/components/tx_summaries/<BLOCKCHAIN>/
+    - With specific modules for blockchain transaction types
+
+- Edit src/assets/blockchain.json
+  - Add entry in each top level entity for blockchain
+
+- Create new subdir uder src/assets/captured_txs for blockchain
+  - Defined captured_txs.json under that and import captured transactions

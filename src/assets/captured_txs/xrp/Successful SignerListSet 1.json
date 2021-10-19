@@ -1,0 +1,98 @@
+{
+  "engine_result": "tesSUCCESS",
+  "engine_result_code": 0,
+  "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+  "ledger_hash": "45C4E578EE6A315AC33B3A094A1EAB9F0D4BA8FCC89D34CD76FF7340C60BA337",
+  "ledger_index": 6329104,
+  "meta": {
+    "AffectedNodes": [
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Flags": 0,
+            "Owner": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "RootIndex": "4985EC0BE703633596CA9DEA785C14975F3061370131CEBABDBFF3E537EDD325"
+          },
+          "LedgerEntryType": "DirectoryNode",
+          "LedgerIndex": "4985EC0BE703633596CA9DEA785C14975F3061370131CEBABDBFF3E537EDD325"
+        }
+      },
+      {
+        "CreatedNode": {
+          "LedgerEntryType": "SignerList",
+          "LedgerIndex": "7E81A58D09965CDDABECC7826B85F5CC6A91C3043CCE91EF0DFD0B299E4AA4BD",
+          "NewFields": {
+            "Flags": 65536,
+            "SignerEntries": [
+              {
+                "SignerEntry": {
+                  "Account": "r3Bc4YEN9CTNtRFFWBXrw3sbHQ4FMNSAY8",
+                  "SignerWeight": 1
+                }
+              },
+              {
+                "SignerEntry": {
+                  "Account": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+                  "SignerWeight": 1
+                }
+              }
+            ],
+            "SignerQuorum": 1
+          }
+        }
+      },
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Balance": "933989688",
+            "Flags": 0,
+            "OwnerCount": 3,
+            "Sequence": 18
+          },
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "C39E6BD7E8EC0E2104B99909A3B6DFFDFB7995A9890E5CFB17A909C8188D280A",
+          "PreviousFields": {
+            "Balance": "933989808",
+            "OwnerCount": 2,
+            "Sequence": 17
+          },
+          "PreviousTxnID": "884B02269D4E2F5CA2F92E448915BFF8B6241DF2AD3D5D5110BE75CAC65533AD",
+          "PreviousTxnLgrSeq": 6328590
+        }
+      }
+    ],
+    "TransactionIndex": 2,
+    "TransactionResult": "tesSUCCESS"
+  },
+  "status": "closed",
+  "transaction": {
+    "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+    "Fee": "120",
+    "Flags": 2147483648,
+    "LastLedgerSequence": 6329105,
+    "Sequence": 17,
+    "SignerEntries": [
+      {
+        "SignerEntry": {
+          "Account": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+          "SignerWeight": 1
+        }
+      },
+      {
+        "SignerEntry": {
+          "Account": "r3Bc4YEN9CTNtRFFWBXrw3sbHQ4FMNSAY8",
+          "SignerWeight": 1
+        }
+      }
+    ],
+    "SignerQuorum": 1,
+    "SigningPubKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+    "TransactionType": "SignerListSet",
+    "TxnSignature": "3045022100E67FA4BD705BEA5C540D66E89A8C3B34477B26B77009777B6694DC76C075FA9D02203C5E21C045F44D2A85C717A07002D85DF40D588A50BDC5913720819E6A2B9DCC",
+    "date": 640316112,
+    "hash": "C12FFEBF5D9B7EE445C2028EF5396EB945ED53F86DA1926EC5797968E186EA97"
+  },
+  "type": "transaction",
+  "validated": true
+}

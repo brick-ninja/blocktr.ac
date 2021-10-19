@@ -1,0 +1,113 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+#app{
+  height: 100%;
+}
+
+:root {
+  --theme-color1: #0091FF;
+  --theme-color2: #395366;
+  --theme-color3: #ECECEC;
+  --theme-color4: #707070;
+  --theme-color5: #16BE59;
+  --theme-color6: #E8F5FF;
+
+  --theme-font1:  "Inter Regular";
+  --theme-font2:  "Helvetica Regular";
+  --theme-font3:  "Helvetica Bold";
+  --theme-font4:  ".SF NS Display Regular";
+  --theme-font5:  "Inter Bold";
+}
+
+/*****/
+
+.modal_header h5{
+  font-weight: bold;
+  font-family: "Helvetica Bold";
+}
+
+.form_table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.form_text{
+  font-family: var(--theme-font4);
+  vertical-align: top;
+}
+
+.form_input{
+  width: 100%;
+  font-family: var(--theme-font4);
+}
+
+.form_error{
+  color: red;
+  font-size: 0.7rem;
+}
+
+.form_error .placeholder{
+  margin: 5px;
+  content: '\a0';
+}
+
+.form_switch{
+  font-family: var(--theme-font4);
+}
+
+.form_switch .custom-control-label::before{
+  border: none;
+  background-color: #E2EAF3;
+}
+
+.form_switch.custom-switch .custom-control-label::after{
+  background-color: var(--theme-color1);
+}
+
+.form_switch.custom-switch .custom-control-input:checked ~ .custom-control-label::before{
+  background-color: #B9F4D0;
+  border-color: none;
+}
+
+.form_switch.custom-switch .custom-control-input:checked ~ .custom-control-label::after{
+  background-color: #73D89B;
+}
+
+.form_switch.custom-switch .custom-control-input[disabled] ~ .custom-control-label::after{
+  background-color: #6a6b6c;
+}
+
+.currency_amount{
+  font-family: var(--theme-font4);
+}
+
+.failed .currency_amount{
+  opacity: 0.4;
+}
+
+.tx_detail_label{
+  color: #395366;
+  opacity: 0.6;
+}
+
+/*****/
+
+.fade-enter-active, .fade-leave-active{
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

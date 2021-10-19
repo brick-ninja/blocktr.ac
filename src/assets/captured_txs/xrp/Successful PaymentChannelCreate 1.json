@@ -1,0 +1,84 @@
+{
+  "engine_result": "tesSUCCESS",
+  "engine_result_code": 0,
+  "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+  "ledger_hash": "8C35DC2ABF7C1DA4370E9B4B2CBD1D081C266705D57BBEAA91BBAAF33C08ADA2",
+  "ledger_index": 6331004,
+  "meta": {
+    "AffectedNodes": [
+      {
+        "CreatedNode": {
+          "LedgerEntryType": "PayChannel",
+          "LedgerIndex": "4763C21F587FCE516E6E076BA444FD22611F2D18E7D3ABAC9ED47A65A049A552",
+          "NewFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Amount": "500000000",
+            "Destination": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+            "PublicKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+            "SettleDelay": 300
+          }
+        }
+      },
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Flags": 0,
+            "Owner": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "RootIndex": "4985EC0BE703633596CA9DEA785C14975F3061370131CEBABDBFF3E537EDD325"
+          },
+          "LedgerEntryType": "DirectoryNode",
+          "LedgerIndex": "4985EC0BE703633596CA9DEA785C14975F3061370131CEBABDBFF3E537EDD325"
+        }
+      },
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Balance": "433989316",
+            "Flags": 0,
+            "OwnerCount": 4,
+            "Sequence": 22
+          },
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "C39E6BD7E8EC0E2104B99909A3B6DFFDFB7995A9890E5CFB17A909C8188D280A",
+          "PreviousFields": {
+            "Balance": "933989328",
+            "OwnerCount": 3,
+            "Sequence": 21
+          },
+          "PreviousTxnID": "907CECB78E5E083570EF9FE865A1B6687915CBD9E148B372D9B412D7DD9C33DF",
+          "PreviousTxnLgrSeq": 6329921
+        }
+      },
+      {
+        "ModifiedNode": {
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "FD92890318922B78EE146AF4AE1BA8E1B944BD28ED286DB937692821A18471EA",
+          "PreviousTxnID": "6B6D3EE828327D1C8DFE430F1AA6A55A072CA28FFF4FB99A48189E8C76AD6190",
+          "PreviousTxnLgrSeq": 6327306
+        }
+      }
+    ],
+    "TransactionIndex": 0,
+    "TransactionResult": "tesSUCCESS"
+  },
+  "status": "closed",
+  "transaction": {
+    "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+    "Amount": "500000000",
+    "Destination": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+    "Fee": "12",
+    "Flags": 2147483648,
+    "LastLedgerSequence": 6331007,
+    "PublicKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+    "Sequence": 21,
+    "SettleDelay": 300,
+    "SigningPubKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+    "TransactionType": "PaymentChannelCreate",
+    "TxnSignature": "3045022100D47A3ACD9D3725931F64209A13577CA48DEE9465F59A4893F16130193D7BDAC0022062BA2D1F93F2FDC09ED43A5C053398BB59A3C52F2E3F468E241F16E011F629BD",
+    "date": 640321970,
+    "hash": "621E973E7464BED76C152FB4AA927ED3BF1A35768FEE7316274DB28CCC22D4DF"
+  },
+  "type": "transaction",
+  "validated": true
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "Transaction" : {
+      "blockchain" : "xrp",
+      "hash" : "0C6C076F44500F33EC0B91290602AD5EF6DF5A1362074D8BFFED6D7937147CA3",
+      "date" : "2019-02-17T15:24:22.000Z",
+      "raw" : {
+        "transaction" : {
+          "Account": "rUtCyL45mkqkSqvnoGMHJsqopmrAr1azDa",
+          "Amount": "1656",
+          "Destination": "rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA",
+          "DestinationTag": 107432,
+          "Fee": "12",
+          "Sequence": 700676,
+          "SigningPubKey": "02817C5F80E31A126C88E63C437B15E61DB5EF3B549B330BF6174D0571F6C0974E",
+          "TransactionType": "Payment",
+          "TxnSignature": "3045022100F19707156EC015E504FB156AA9D9384E9986232BB45FC446600697B7E1027F980220429582BFA9B8B04D9930E533B3BCB88FA20A9F33FE0BA4495FCD32FD4210A4C6",
+          "date": 603732262,
+          "hash": "0C6C076F44500F33EC0B91290602AD5EF6DF5A1362074D8BFFED6D7937147CA3",
+          "inLedger": 45203893,
+          "ledger_index": 45203893,
+          "validated": true
+        },
+        "meta": {
+          "AffectedNodes": [
+            {
+              "ModifiedNode": {
+                "FinalFields": {
+                  "Account": "rUtCyL45mkqkSqvnoGMHJsqopmrAr1azDa",
+                  "Balance": "667115100",
+                  "Flags": 0,
+                  "OwnerCount": 0,
+                  "Sequence": 700677
+                },
+                "LedgerEntryType": "AccountRoot",
+                "LedgerIndex": "50A84A6D9CA649BB6D2BC414BB1CDFBB5D793B906A3FE3323065FF6C6FB8B386",
+                "PreviousFields": {
+                  "Balance": "667116768",
+                  "Sequence": 700676
+                },
+                "PreviousTxnID": "F3EF04CD98A34F09126D0F691C5E7D78739603C82F96DB2B8FE520014E8359C8",
+                "PreviousTxnLgrSeq": 45203892
+              }
+            },
+            {
+              "ModifiedNode": {
+                "FinalFields": {
+                  "Account": "rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA",
+                  "Balance": "304537464048",
+                  "Flags": 1179648,
+                  "OwnerCount": 5,
+                  "Sequence": 27770
+                },
+                "LedgerEntryType": "AccountRoot",
+                "LedgerIndex": "A634EC8730F22B6A4041765ED39FDF5625466E5FD88C9F437E1C67A06D898546",
+                "PreviousFields": {
+                  "Balance": "304537462392"
+                },
+                "PreviousTxnID": "F3EF04CD98A34F09126D0F691C5E7D78739603C82F96DB2B8FE520014E8359C8",
+                "PreviousTxnLgrSeq": 45203892
+              }
+            }
+          ],
+          "TransactionIndex": 5,
+          "TransactionResult": "tesSUCCESS",
+          "delivered_amount": "1656"
+        }
+      }
+    }
+  },
+
+  {
+    "Transaction" : {
+      "blockchain" : "xrp",
+      "hash" : "9E471809937837E1D7F6DB5542BECFFD2CE4D43E93D6169613333858CB865436",
+      "date" : "2020-05-08T07:57:51.000Z",
+      "raw" : {
+        "transaction" : {
+          "Account": "rpZ74gjYqVGmRQpXYXbsMXXQXJGJaWhgNu",
+          "Destination": "rNFDdyhpQYwhSwUWePCAzTkxyt5sBdpq3T",
+          "Fee": "5000000",
+          "Flags": 2147483648,
+          "LastLedgerSequence": 55317121,
+          "Sequence": 1775,
+          "SigningPubKey": "0321F09C672FF31F5A4E540919B4DAE35968AD2F7864859B92A89497717601DFAA",
+          "TransactionType": "AccountDelete",
+          "TxnSignature": "304402202720BCADC10DBA7C9C26D04799F40870BC032EE34FFA8E34386D90F4413263F7022033D2F21422C9DE57301F5CCDCC826297E47A935717DEED24A02F2D6201B536D8",
+          "date": 642239871,
+          "hash": "9E471809937837E1D7F6DB5542BECFFD2CE4D43E93D6169613333858CB865436",
+          "inLedger": 55317119,
+          "ledger_index": 55317119,
+          "validated": true,
+          "warnings": [
+            {
+              "id": 1004,
+              "message": "This is a reporting server.  The default behavior of a reporting server is to only return validated data. If you are looking for not yet validated data, include \"ledger_index : current\" in your request, which will cause this server to forward the request to a p2p node. If the forward is successful the response will include \"forwarded\" : \"true\""
+            }
+          ]
+        },
+        "meta": {
+          "AffectedNodes": [
+            {
+              "DeletedNode": {
+                "FinalFields": {
+                  "Account": "rpZ74gjYqVGmRQpXYXbsMXXQXJGJaWhgNu",
+                  "Balance": "0",
+                  "Flags": 0,
+                  "OwnerCount": 0,
+                  "PreviousTxnID": "44BF7E60C854F57D2127F1838DA42C248932FEB0E2088E3869927A4F26478B21",
+                  "PreviousTxnLgrSeq": 49077475,
+                  "Sequence": 1776
+                },
+                "LedgerEntryType": "AccountRoot",
+                "LedgerIndex": "11228C69F7C44EA2AF75C23299D88C65829D216B4E0C8F031AA957D7E19BB820",
+                "PreviousFields": {
+                  "Balance": "101534272",
+                  "Sequence": 1775
+                }
+              }
+            },
+            {
+              "ModifiedNode": {
+                "FinalFields": {
+                  "Account": "rNFDdyhpQYwhSwUWePCAzTkxyt5sBdpq3T",
+                  "Balance": "135595154486",
+                  "Flags": 0,
+                  "OwnerCount": 0,
+                  "Sequence": 42
+                },
+                "LedgerEntryType": "AccountRoot",
+                "LedgerIndex": "779A40E4DA65C999BA47803B26FC512ABF1867091BBFB6F05FA0931634E86799",
+                "PreviousFields": {
+                  "Balance": "135498620214"
+                },
+                "PreviousTxnID": "86CE269C7117D790E0BC0C71A619158D17A20FF0F617760D1E3CD85DCFEE6EB0",
+                "PreviousTxnLgrSeq": 55162742
+              }
+            },
+            {
+              "DeletedNode": {
+                "FinalFields": {
+                  "Flags": 0,
+                  "Owner": "rpZ74gjYqVGmRQpXYXbsMXXQXJGJaWhgNu",
+                  "RootIndex": "E2528755B3CE0F4B98F15418F338BA2489E8F85C319D2F641BE425EAD15A9006"
+                },
+                "LedgerEntryType": "DirectoryNode",
+                "LedgerIndex": "E2528755B3CE0F4B98F15418F338BA2489E8F85C319D2F641BE425EAD15A9006"
+              }
+            }
+          ],
+          "DeliveredAmount": "96534272",
+          "TransactionIndex": 22,
+          "TransactionResult": "tesSUCCESS",
+          "delivered_amount": "96534272"
+        }
+      }
+    }
+  }
+]
+

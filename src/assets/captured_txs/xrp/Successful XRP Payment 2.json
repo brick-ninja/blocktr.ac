@@ -1,0 +1,69 @@
+{
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+    "ledger_hash": "F008BAA0E62A70F17F0249C0ADFDAB084BAA32365AD0504666A9DF53441968B1",
+    "ledger_index": 53387182,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rKdDdrbU3MedsG7VtBAir4RjC35tzjDZnr",
+                        "Balance": "31950417470105",
+                        "Flags": 0,
+                        "OwnerCount": 0,
+                        "Sequence": 53435
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "81297786EBFBAC9FE0354200D833471DF59E2E39BC94533FD47DEE102AB33F28",
+                    "PreviousFields": {
+                        "Balance": "31950415370105"
+                    },
+                    "PreviousTxnID": "C811997F3E00DDD7732EDF66EEC8B531BDEE57C8EF2353312712CA569AF0E5A9",
+                    "PreviousTxnLgrSeq": 53387166
+                }
+            },
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rKwrTgAMFegw1BvbvY8t4PfpTcA3ko5W3T",
+                        "Balance": "151361804",
+                        "Flags": 0,
+                        "OwnerCount": 1,
+                        "Sequence": 18273
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "FDA4567DFCFB88A9F1A888B6B4830EEFD717294372DF3027235EB7B8D9FCAA0F",
+                    "PreviousFields": {
+                        "Balance": "153468042",
+                        "Sequence": 18272
+                    },
+                    "PreviousTxnID": "C811997F3E00DDD7732EDF66EEC8B531BDEE57C8EF2353312712CA569AF0E5A9",
+                    "PreviousTxnLgrSeq": 53387166
+                }
+            }
+        ],
+        "TransactionIndex": 20,
+        "TransactionResult": "tesSUCCESS",
+        "delivered_amount": "2100000"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rKwrTgAMFegw1BvbvY8t4PfpTcA3ko5W3T",
+        "Amount": "2100000",
+        "Destination": "rKdDdrbU3MedsG7VtBAir4RjC35tzjDZnr",
+        "DestinationTag": 979182,
+        "Fee": "6238",
+        "Flags": 2147483648,
+        "LastLedgerSequence": 53387185,
+        "Sequence": 18272,
+        "SigningPubKey": "0256FBA938108E8D9BC52CD935EDFEC9715B359A03C000DF69B878D92A298F620B",
+        "TransactionType": "Payment",
+        "TxnSignature": "3045022100B4A3BFD5872D369D44549D0F6F55F6BB5124D245819F981B04693701806F5ACD022066388BC13707BDB596EA3D736884839BCF6CEACED8E7DF2DCACFF743BC5E16DB",
+        "date": "2020-02-12T20:08:10.000Z",
+        "hash": "3B264D06B2F6E4EBD1533D77281CA6441F4290C8DE0D2314DF13112C48CA02BC"
+    },
+    "type": "transaction",
+    "validated": true
+}

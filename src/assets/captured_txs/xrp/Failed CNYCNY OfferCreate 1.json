@@ -1,0 +1,58 @@
+{
+    "engine_result": "tecUNFUNDED_OFFER",
+    "engine_result_code": 103,
+    "engine_result_message": "Insufficient balance to fund created offer.",
+    "ledger_hash": "2BCF992E795DB31946B2F5950B627E3F99B24B970E5665B93BB9744156345F91",
+    "ledger_index": 53392830,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rH2k8SkwoWgwry9J89jgFP9NbSWu13jnsu",
+                        "Balance": "7032855851",
+                        "Flags": 0,
+                        "OwnerCount": 10,
+                        "Sequence": 4723362
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "2F540B6D279A09812A00D53D5B6BE6BB1F0EB64BEC17E6D4DB43AFD285F5DA03",
+                    "PreviousFields": {
+                        "Balance": "7032865851",
+                        "Sequence": 4723361
+                    },
+                    "PreviousTxnID": "DAD00737482DD1F53328659AEB9B6C9ECD526DAAEC957C6694E002B21C3F6820",
+                    "PreviousTxnLgrSeq": 53392830
+                }
+            }
+        ],
+        "TransactionIndex": 69,
+        "TransactionResult": "tecUNFUNDED_OFFER"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rH2k8SkwoWgwry9J89jgFP9NbSWu13jnsu",
+        "Fee": "10000",
+        "Flags": 131072,
+        "LastLedgerSequence": 53392832,
+        "Sequence": 4723361,
+        "SigningPubKey": "02E5086BFB6699A33BFEE2FC27D8F3BB3B8F734A36BC546062B4D5B3558441FC21",
+        "TakerGets": {
+            "currency": "CNY",
+            "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+            "value": "6112.175708069748"
+        },
+        "TakerPays": {
+            "currency": "CNY",
+            "issuer": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
+            "value": "6085.901599838601"
+        },
+        "TransactionType": "OfferCreate",
+        "TxnSignature": "30440220257C302C4039CE7E91451761E82E768EC44BEF09A08BCEB76F04D5208A040CBE02205A47C5FA229C6673EE33BA061EBF6E7A1C6FF71D2AC4CDEFC770BA44C7B6FBC4",
+        "date": "2020-02-13T02:01:10.000Z",
+        "hash": "7C5E4E620346B80E3F8B5B1DE03F161339A3C25DA63E554559319509F0858084",
+        "owner_funds": "0"
+    },
+    "type": "transaction",
+    "validated": true
+}

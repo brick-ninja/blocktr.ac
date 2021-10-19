@@ -1,0 +1,206 @@
+{
+    "engine_result": "tecPATH_DRY",
+    "engine_result_code": 128,
+    "engine_result_message": "Path could not send partial amount.",
+    "ledger_hash": "E51D6B3E9C6DE9B0F6B85589B7458A7650FDAF5E12EFBBB5FC88481C2D7215CE",
+    "ledger_index": 53388227,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rNXQc5mT7b336bFTkenFTPiF5TYuyrJ3ZH",
+                        "Balance": "5689696145",
+                        "Flags": 0,
+                        "OwnerCount": 3,
+                        "Sequence": 8646485
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "2563E04A259079D5CF1FDE758CD832B47AF3238E530AB31649CCFFD8E1945AC2",
+                    "PreviousFields": {
+                        "Balance": "5689696156",
+                        "Sequence": 8646484
+                    },
+                    "PreviousTxnID": "AA175F93099020E229385676E56CC507D2027054FA8C1D7F1E30C20A26EB14E3",
+                    "PreviousTxnLgrSeq": 53388226
+                }
+            }
+        ],
+        "TransactionIndex": 37,
+        "TransactionResult": "tecPATH_DRY"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rNXQc5mT7b336bFTkenFTPiF5TYuyrJ3ZH",
+        "Amount": {
+            "currency": "XLM",
+            "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+            "value": "20000"
+        },
+        "Destination": "rNXQc5mT7b336bFTkenFTPiF5TYuyrJ3ZH",
+        "Fee": "11",
+        "Flags": 2147942400,
+        "LastLedgerSequence": 53388230,
+        "Paths": [
+           [
+               {
+                    "currency": "CNY",
+                    "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "CNY",
+                    "issuer": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                },
+               {
+                    "currency": "XLM",
+                    "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                }
+            ],
+           [
+               {
+                    "currency": "CNY",
+                    "issuer": "razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "CNY",
+                    "issuer": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                },
+               {
+                    "currency": "XLM",
+                    "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                }
+            ],
+           [
+               {
+                    "currency": "USD",
+                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "USD",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                },
+               {
+                    "currency": "XLM",
+                    "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                }
+            ],
+           [
+               {
+                    "currency": "USD",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "USD",
+                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                },
+               {
+                    "currency": "XLM",
+                    "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                }
+            ],
+           [
+               {
+                    "currency": "EUR",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "USD",
+                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                },
+               {
+                    "currency": "XLM",
+                    "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                }
+            ],
+           [
+               {
+                    "currency": "USD",
+                    "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "EUR",
+                    "issuer": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                },
+               {
+                    "currency": "XRP",
+                    "type": 16,
+                    "type_hex": "0000000000000010"
+                },
+               {
+                    "currency": "XLM",
+                    "issuer": "r8HgVGenRTAiNSM5iqt9PX2D2EczFZhZr",
+                    "type": 48,
+                    "type_hex": "0000000000000030"
+                }
+            ]
+        ],
+        "SendMax": "20000000000",
+        "Sequence": 8646484,
+        "SigningPubKey": "031C4903CDF031E9A08828BE0DE270DF4F74E4BA87B704ED4599810EEF3576BAD6",
+        "TransactionType": "Payment",
+        "TxnSignature": "304402204176F9318E76D7035E9037D604F138351B7C11E240686BCDE39E70598F6093FB022067656DD121F1B178950AACE47EAB65E5388099DBE2D1D276FB16FA20C05B5995",
+        "date": "2020-02-12T21:13:20.000Z",
+        "hash": "68DAB4952E8D5A94FA80748FEC1111E015DAE19C1B13C988B41C4D45A2797A38"
+    },
+    "type": "transaction",
+    "validated": true
+}

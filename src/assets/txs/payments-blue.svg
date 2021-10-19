@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>payment@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="open-filter" transform="translate(-342.000000, -314.000000)" fill="#0091FF" fill-rule="nonzero">
+            <path d="M353.799998,314.56 L343.56,314.56 C342.8496,314.56 342.2864,315.1296 342.2864,315.84 L342.28,323.519999 C342.28,324.230399 342.8496,324.799998 343.56,324.799998 L353.799998,324.799998 C354.510398,324.799998 355.079998,324.230399 355.079998,323.519999 L355.079998,315.84 C355.079998,315.1296 354.510398,314.56 353.799998,314.56 Z M353.799998,323.519999 L343.56,323.519999 L343.56,319.679999 L353.799998,319.679999 L353.799998,323.519999 Z M353.799998,317.119999 L343.56,317.119999 L343.56,315.84 L353.799998,315.84 L353.799998,317.119999 Z" id="payment"></path>
+        </g>
+    </g>
+</svg>

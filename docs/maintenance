@@ -1,0 +1,34 @@
+Zerp Tracker Maintenance Checklist
+----------------------------------
+
+Twice Daily
+- 10AM & 10PM of every day
+- Ensure all services are running
+  - db, api, site, filters, sinks, maint, status
+- Ensure site and api is accessible
+- Ensure transactions are not accumulating w/out processing
+- Ensure matched transactions are not accumulating w/out notification
+- Ensure systems are not under strain, and disk usage is normal
+  - Ensure database isn't reporting errors
+- Check emails for contacts, complaints
+
+Twice weekly
+- Random days
+- Tweet promotions
+  - random path queries
+  - feature highlights
+  - screenshots
+  - application milestones
+
+Weekly
+- Saturday of every week
+- Ensure twilio account balance is sufficient
+- Ensure no problems accessing stripe
+- Ensure sinks are being notified properly
+- Ensure all backups over week have run properly
+
+Monthly
+- 1st of every month
+- Verify certificats are still valid
+- Check system for updates, update as appropriate
+- Rotate logs / backups as appropropriate

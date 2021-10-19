@@ -1,0 +1,44 @@
+{
+  "transaction" : {
+    "Account": "rnLMPuY2U2nQHpdySCwpKysVQvCNJvacDU",
+    "Destination": "rsdMbYxHmYswHCg1V6vBsnxmHuCjpn6SC4",
+    "Fee": "5000000",
+    "Flags": 2147483648,
+    "LastLedgerSequence": 55314429,
+    "Sequence": 170311,
+    "SigningPubKey": "023988CBB80595AB271743E0BDB530030F6320098E1625193469FBEED2059ADBD6",
+    "TransactionType": "AccountDelete",
+    "TxnSignature": "3044022034BFA8FAC86AC69B53BD34D789E69316768EDA748F1EC95EAD2C187DB53763760220393F1369D1D80E658E742ED15C6771F376656A9715815F6440874F560068D01F",
+    "date": 642229341,
+    "hash": "0D580FBBBB57CB749C5872B180901A8DF7E42699D0BBDB446FC7B781C6E42B8F",
+    "inLedger": 55314423
+  },
+  "meta": {
+    "AffectedNodes": [
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rnLMPuY2U2nQHpdySCwpKysVQvCNJvacDU",
+            "Balance": "14994033",
+            "Flags": 0,
+            "OwnerCount": 0,
+            "Sequence": 170312
+          },
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "6285EA0F64F165E2BFED6D44775E0EB5B370C7F30EDC3224805A7AE9A619B9A6",
+          "PreviousFields": {
+            "Balance": "19994033",
+            "Sequence": 170311
+          },
+          "PreviousTxnID": "C782C65103A60ED3AF4C1F4D33F24E3FBF198D6B13662A3AEE650036D4DA999B",
+          "PreviousTxnLgrSeq": 55314423
+        }
+      }
+    ],
+    "TransactionIndex": 53,
+    "TransactionResult": "tecHAS_OBLIGATIONS"
+  },
+  "validated": true,
+  "engine_result": "tecHAS_OBLIGATIONS",
+  "ledger_index": 55314423
+}

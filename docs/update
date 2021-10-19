@@ -1,0 +1,152 @@
+============
+Update guide
+============
+
+ziti_db
+-------
+System & Postgres:
+  <On local machine>
+  - Run through Zitui upgrade
+  - Enable maintenance flag in config before deploy
+
+  <On ziti_api>
+  - Stop services
+
+  <On server>
+  - If updating system:
+    - sudo dnf update
+    - sudo reboot
+    - Verify
+  - If updating postgres:
+    - sudo dnf update postgresql
+    - sudo service postgresql restart
+    - Verify
+
+  <On ziti_api>
+  - Start services
+  - Verify
+
+  <On local machine>
+  - Disable maintentance flag in config
+  - Deploy
+  - Verify
+
+ziti_api
+--------
+Services:
+- systemctl start|stop|enable|disable|status <service name>
+- ziti-api
+- ziti-txs
+- ziti-maint
+- scripts/status (optional)
+
+System:
+  <On local machine>
+  - Run through Zitui upgrade
+  - Enable maintenance flag in config before deploy
+
+  <On server>
+  - Stop services
+  - sudo dnf update
+  - sudo reboot
+  - Start services (in screen)
+  - Verify
+
+Ziti:
+  <On local machine>
+  - Run through Zitui upgrade
+  - Enable maintenance flag in config before deploy
+
+  <On server>
+  - git diff > ~/diff
+  - git checkout -- config
+  - Stop services
+  - git pull / checkout specific tag
+  - git apply ~/diff
+  - If dependencies added:
+    - yarn install
+  - If db migrations:
+    - pg_dump to backup
+    - NODE_ENV='production' yarn db:migrate
+      - Verify db
+  - If service files updated
+    - systemctl daemon-reload
+  - Start services
+  - Verify
+
+  <On local machine>
+  - Disable maintentance flag in zitui config
+  - Deploy
+  - Verify
+
+ziti_worker1/ziti_worker2
+-------------------------
+Services:
+- systemctl start|stop|enable|disable|status <service name>
+- ziti-filters (worker1)
+- ziti-sinks (worker2)
+
+System:
+  <On local machine>
+  - Run through Zitui upgrade
+  - Enable maintenance flag in config before deploy
+
+  <On server>
+  - Stop services
+  - sudo dnf update
+  - sudo reboot
+  - Start services (in screen)
+  - Verify
+
+Ziti:
+  <On local machine>
+  - Run through Zitui upgrade
+  - Enable maintenance flag in config before deploy
+
+  <On server>
+  - git diff > ~/diff
+  - git checkout -- config
+  - Stop services
+  - git pull / checkout specific tag
+  - git apply ~/diff
+  - If dependencies added:
+    - yarn install
+  - If service files updated
+    - systemctl daemon-reload
+  - Start services
+  - Verify
+
+  <On local machine>
+  - Disable maintentance flag in zitui config
+  - Deploy
+  - Verify
+
+zitui
+-----
+System:
+  - Deploy zitui updates to failover server
+  - Point domain at failover server
+  - Wait for domain update to complete
+  - Verify
+
+  <On server>
+  - sudo dnf update
+  - Reboot
+
+  - Point domain at primary service
+  - Wait for domain update to complete
+  - Verify
+
+ZitUI:
+  <On local machine>
+  - git checkout specific tag
+  - Replace BACKEND_URL in src/config.js
+  - Copy latest config/ziti.js from ziti project to src/
+  - ./deploy
+  - Verify
+
+zitz1
+-----------
+- Do not do this during backup window
+- sudo dnf update
+- sudo reboot

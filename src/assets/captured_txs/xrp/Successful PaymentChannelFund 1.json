@@ -1,0 +1,70 @@
+{
+  "engine_result": "tesSUCCESS",
+  "engine_result_code": 0,
+  "engine_result_message": "The transaction was applied. Only final in a validated ledger.",
+  "ledger_hash": "5E9206E7394C8EC44275118A3228ACDB32E5DB7EB03A80052BCFD9D292CEFE58",
+  "ledger_index": 6331074,
+  "meta": {
+    "AffectedNodes": [
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Amount": "750000000",
+            "Balance": "0",
+            "Destination": "rJaXQWgTrLq6qMCo2X3gRvT5dqDTBFxyz3",
+            "Flags": 0,
+            "OwnerNode": "0000000000000000",
+            "PublicKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+            "SettleDelay": 300
+          },
+          "LedgerEntryType": "PayChannel",
+          "LedgerIndex": "4763C21F587FCE516E6E076BA444FD22611F2D18E7D3ABAC9ED47A65A049A552",
+          "PreviousFields": {
+            "Amount": "500000000"
+          },
+          "PreviousTxnID": "621E973E7464BED76C152FB4AA927ED3BF1A35768FEE7316274DB28CCC22D4DF",
+          "PreviousTxnLgrSeq": 6331004
+        }
+      },
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Balance": "183989304",
+            "Flags": 0,
+            "OwnerCount": 4,
+            "Sequence": 23
+          },
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "C39E6BD7E8EC0E2104B99909A3B6DFFDFB7995A9890E5CFB17A909C8188D280A",
+          "PreviousFields": {
+            "Balance": "433989316",
+            "Sequence": 22
+          },
+          "PreviousTxnID": "621E973E7464BED76C152FB4AA927ED3BF1A35768FEE7316274DB28CCC22D4DF",
+          "PreviousTxnLgrSeq": 6331004
+        }
+      }
+    ],
+    "TransactionIndex": 1,
+    "TransactionResult": "tesSUCCESS"
+  },
+  "status": "closed",
+  "transaction": {
+    "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+    "Amount": "250000000",
+    "Channel": "4763C21F587FCE516E6E076BA444FD22611F2D18E7D3ABAC9ED47A65A049A552",
+    "Fee": "12",
+    "Flags": 2147483648,
+    "LastLedgerSequence": 6331077,
+    "Sequence": 22,
+    "SigningPubKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+    "TransactionType": "PaymentChannelFund",
+    "TxnSignature": "304402201AA821445373F92742751EEE707A127207AFD4BFE3C8EE98BB79661E8EC3158002201207D2CA85B5F3037697D50FC02B3513B03A4890E239A113256C23E21942A7AA",
+    "date": 640322180,
+    "hash": "AEBDE6C3916733444DE27FB52D81179CDD51D4A8D119938B2E2A13847AA78951"
+  },
+  "type": "transaction",
+  "validated": true
+}

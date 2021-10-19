@@ -1,0 +1,63 @@
+This document describes the current rendering of tx types in the tx container.
+The tx container is rendered as a flex basis with a slot filled by tx-type-specific
+templates. Both the container and the type templates use the 'md' media query as a
+cutoff point, certain content is rendered at 'md' and above and other content is
+rendered below 'md'.
+
+The base md+ container is constructed as follows:
+
+-------------------------------------------------------------
+|tx icon | timestamp | sending account | type template slot |
+|        | type      |                 |                    |
+-------------------------------------------------------------
+   6%        14%           32%               46%
+
+The base md- container is constructed as follows
+
+-------------------------------------------------------------
+|tx icon | timestamp | type template slot                   |
+|        | type      |                                      |
+-------------------------------------------------------------
+   6%        14%                   78%
+
+In both cases the total flex-basis is 98% of the tx container width and the icon
+and timestamp_type sections are consistent, totalling 20% of the container width.
+
+The remaining portion of the container is allocated as follows:
+
+
+-------------------------------------------------------------------
+|Tx Type             | md+ contents        | md- contents         |
+-------------------------------------------------------------------
+|AccountDelete       | Destination 32%     | CurrencyAmount 78%   |
+|                    | CurrencyAmount 14%  |                      |
+-------------------------------------------------------------------
+|AccountSet          |                Domain 7%                   |
+-------------------------------------------------------------------
+|EscrowCancel &      | Amount 46%  -or-    | Amount 78% -or-      |
+|EscrowFinish        | Sequence 46%        | Sequence 78%         |
+------------------------------------------------------------------
+|EscrowCreate        | CurrencyAmount 46%  | CurrencyAmount 78%   |
+------------------------------------------------------------------
+|OfferCancel         | BuyAmount 23%       | BuySellPair 78% -or- |
+|                    | SellAmount 23% -or- | Sequence 78%         |
+|                    | Sequence 46%        |                      |
+-------------------------------------------------------------------
+|OfferCreate         | BuyAmount 23%       | BuySellPair 78%      |
+|                    | SellAmount 23%      |                      |
+-------------------------------------------------------------------
+|Payment             | Destination 32%     | CurrencyAmount 78%   |
+|                    | CurrencyAmount 14%  |                      |
+-------------------------------------------------------------------
+|PayChannelClaim     | BalanaceAmount 39%  | BalanceAmount 67%    |
+|                    | Status 7%           | Status 11%           |
+-------------------------------------------------------------------
+|PayChannelCreate &  | Destination 32%     | CurrencyAmount 78%   |
+|PayChannelFund      | CurrencyAmount 14%  |                      |
+-------------------------------------------------------------------
+|SignerListSet       | Signers 23%         | Signers 39%          |
+|                    | Quorum 23%          | Quorum 39%           |
+-------------------------------------------------------------------
+|TrustSet            | Issuer 32%          | CurrencyAmount 78%   |
+|                    | CurrencyAmount 14%  |                      |
+-------------------------------------------------------------------

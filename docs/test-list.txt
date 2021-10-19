@@ -1,0 +1,158 @@
+Test all items:
+--------------
+- Linux (multiple resolutions)
+  - Firefox
+  - Chrome
+- MacOS (multiple resolutions)
+  - Safari
+  - Firefox
+  - Chrome
+- Windows (multiple resolutions)
+  - Edge
+  - Firefox
+  - Chrome
+- Android (samsung phone, tablet)
+  - Browser
+  - Chrome
+- iOS
+  - Safari
+
+Anonymous (also test after login)
+---------
+_ Landing page
+- About page
+- Help page
+- Terms of Service Page
+- Live TXs
+  - filter by category
+  - filter by expression
+  - filter help
+    - click examples
+  - Monitor your account
+  - save to filter
+    - 'Create filter' edge cases below
+    - continue with registration (verify saved)
+    - continue with login (verify saved)
+  - set personalized filter
+    - 'Create filter' edge cases below
+    - continue with registration (verify saved)
+    - continue with login (verify saved)
+- Transaction
+- Account
+- Try to access filter
+- Try to access filter tester
+- Try to access plans
+- Try to access plan
+- Try to access checkout
+
+Registration
+------------
+- Invalid params
+- Existing user
+- Successful registration (Verify email)
+
+Confirm Email
+-------------
+- Invalid code
+- Success
+
+Forgot password
+--------------
+- Invalid email
+- Invalid code
+- Invalid params
+- Success
+
+Login
+-----
+- Invalid params
+- Successful login
+
+Forgot password
+---------------
+- Invalid params
+- Successful reset (verify email)
+
+Logout
+------
+- Manual logout
+- Logout after auth timeout
+
+Live TXs
+--------
+- Filter sidebar
+  - number of matches
+- Add new filter
+  - with no filters left
+
+Create filter
+-------------
+- Invalid params
+- Create sink
+  - Invalid sink
+  - Too many sinks
+  - Success
+- Too many sinks per filter
+- Successful creation (verify)
+  - jsonpath filter
+  - template filter
+
+View filter
+-----------
+- no matches
+- some matches
+
+Test filter
+-----------
+- no matches
+- some matches
+
+Edit filter
+-----------
+- Same edge cases as 'Create filter' above
+
+Duplicate filter
+----------------
+- Same edge cases as 'Create filter' above
+
+Delete filter
+-------------
+- Cancel
+- Confirm
+
+Modify settings
+---------------
+- Try to deselect batch_size, notifcation_time
+- Create sink
+  - invalid sink
+  - too many sinks
+  - success
+- Delete sink
+
+Modify profile
+--------------
+- Change email
+  - try invalid
+- Change password
+  - try invalid
+- Change billing info
+  - try invalid
+
+Plans
+-----
+- upgrade existing
+- select higher
+- try to select current/lower
+
+Plan
+----
+- Add additional
+- Select months
+- Checkout
+
+Checkout
+--------
+- Enter payment info
+- Use existing payment
+- Invalid payment
+- Success

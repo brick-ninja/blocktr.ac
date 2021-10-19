@@ -1,0 +1,58 @@
+{
+    "engine_result": "tecUNFUNDED",
+    "engine_result_code": 129,
+    "engine_result_message": "One of _ADD, _OFFER, or _SEND. Deprecated.",
+    "ledger_hash": "4AB9A618B79B90D0E906B7755259DAE6D11F9D1BC3B2C15D2EEB643E83381BF3",
+    "ledger_index": 53476643,
+    "meta": {
+        "AffectedNodes": [
+           {
+                "ModifiedNode": {
+                    "FinalFields": {
+                        "Account": "rGpbbt97XNDXJ6xv7pcxaw8rd2wgHy1Bgz",
+                        "Balance": "236665588",
+                        "Flags": 0,
+                        "OwnerCount": 41,
+                        "Sequence": 50
+                    },
+                    "LedgerEntryType": "AccountRoot",
+                    "LedgerIndex": "326F3609046DDD4C4DCA77DF039B3AC1FF60A1AE142D8CF957431CADA8D32105",
+                    "PreviousFields": {
+                        "Balance": "236665600",
+                        "Sequence": 49
+                    },
+                    "PreviousTxnID": "3BC3F806ED5E1A0D981BD1D7A07088B927615C9AA0E312E0681C2F8B22CD5071",
+                    "PreviousTxnLgrSeq": 53476633
+                }
+            }
+        ],
+        "TransactionIndex": 41,
+        "TransactionResult": "tecUNFUNDED"
+    },
+    "status": "closed",
+    "transaction": {
+        "Account": "rGpbbt97XNDXJ6xv7pcxaw8rd2wgHy1Bgz",
+        "Amount": "100000000",
+        "Destination": "rGpbbt97XNDXJ6xv7pcxaw8rd2wgHy1Bgz",
+        "Fee": "12",
+        "FinishAfter": "2027-10-10T09:41:00.000Z",
+        "Flags": 2147483648,
+        "Memos": [
+           {
+                "Memo": {
+                    "MemoData": "Bithomp tool v. 0.4.9",
+                    "MemoFormat": "plain/text",
+                    "MemoType": "client"
+                }
+            }
+        ],
+        "Sequence": 49,
+        "SigningPubKey": "02A37A7142FC9A1CEF60F4773EC2FD75E4EF5411D8E275DA8DDF2BA304E0C6FE2D",
+        "TransactionType": "EscrowCreate",
+        "TxnSignature": "3044022079B6A4C2C0F82E98A9FD195C74E28375FABB391D075F39511E8809202455ECF9022078465275DDED48AC808AD8C5CF9860B9C25498475CE8AE63E6F7512187343ACA",
+        "date": "2020-02-16T18:04:21.000Z",
+        "hash": "47D5ED740DB126285AA725EEDFE3230B2A53C26D1D2BFA7D1FAFDBDA206994BB"
+    },
+    "type": "transaction",
+    "validated": true
+}

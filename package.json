@@ -1,0 +1,87 @@
+{
+  "name": "zitui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "jest ./tests/FilterTester.test.js"
+  },
+  "dependencies": {
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.1.0",
+    "bitcoin-address-validation": "^2.0.1",
+    "bootstrap-vue": "^2.1.0",
+    "bscript-parser": "^0.1.0",
+    "core-js": "^3.4.4",
+    "estraverse": "^5.1.0",
+    "ethers": "^5.1.4",
+    "ezxlm": "^0.0.9",
+    "inflector-js": "^1.0.1",
+    "jest": "^26.1.0",
+    "jest-transform-stub": "^2.0.0",
+    "json-xdr": "^0.1.1",
+    "jsonpath-complexity": "^1.0.7",
+    "moment-timezone": "^0.5.27",
+    "ripple-lib": "^1.6.5",
+    "stellar-sdk": "^7.0.0",
+    "vue": "^2.6.10",
+    "vue-jest": "^3.0.6",
+    "vue-moment": "^4.1.0",
+    "vue-mq": "^1.0.1",
+    "vue-multiselect": "^2.1.6",
+    "vue-reactive-cookie": "^1.0.4",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.2",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "css-mediaquery": "^0.1.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "flush-promises": "^1.0.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.vue$": "vue-jest"
+    },
+    "moduleNameMapper": {
+      "^.+\\.(css|styl|less|sass|scss|png|svg|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+    }
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

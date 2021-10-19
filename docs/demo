@@ -1,0 +1,38 @@
+===============
+BlockTr.ac demo
+===============
+
+- blocktr.ac password on hand (mo@devnullprod.com)
+- nycxrp account on hand (r43WDLVydaD7i6sE5jbjRRBmWDe2hSL38a)
+
+======================================================
+
+- Start recording
+
+Demo:
+- Share browser window
+- https://blocktr.ac
+- See live blockchain transactions
+  - Switch the blockchain in the upper left
+- Offers multiple ways to create matchers
+  - We won't go into the advanced way tonight, but here you see it (click jsonpath ?, help page, etc)
+- Sign up for an account or login
+- <Login>
+- <Create new filter>
+  - Show categories (for multiple blockchains)
+- <Specify From Account>
+  - Account ... (NYC/XRP donation account)
+- <Select email>
+  - <Save>
+- Click on filter
+  - Currently no matches
+- You are done! You'll automatically receive alerts via email
+- <Sign into Xumm on phone>
+- Share phone screen window
+- <Send payment from NYC/XRP account to my bitstamp account (w/ destination tag)>
+- <Wait for email> (refresh mail after 5 seconds)
+- Open email
+- Back to blocktr.ac
+  - View filter matches
+  - View notifications
+  - Configurable settings

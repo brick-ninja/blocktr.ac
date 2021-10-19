@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="14px"
+   height="11px"
+   viewBox="0 0 14 11"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="payments-white.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>payment@1.5x</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1553"
+     inkscape:window-height="853"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="21.454545"
+     inkscape:cx="-2.2754239"
+     inkscape:cy="5.4999999"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg9" />
+  <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+  <title
+     id="title2">payment@1.5x</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
+     transform="translate(-342,-314)"
+     id="open-filter">
+    <path
+       inkscape:connector-curvature="0"
+       id="payment"
+       d="m 353.8,314.56 h -10.24 c -0.7104,0 -1.2736,0.5696 -1.2736,1.28 l -0.006,7.68 c 0,0.7104 0.5696,1.28 1.28,1.28 h 10.24 c 0.7104,0 1.28,-0.5696 1.28,-1.28 v -7.68 c 0,-0.7104 -0.5696,-1.28 -1.28,-1.28 z m 0,8.96 h -10.24 v -3.84 h 10.24 z m 0,-6.4 h -10.24 v -1.28 h 10.24 z"
+       style="fill:#ffffff;fill-opacity:1" />
+  </g>
+</svg>

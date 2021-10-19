@@ -1,0 +1,48 @@
+{
+  "engine_result": "tecNO_TARGET",
+  "engine_result_code": 138,
+  "engine_result_message": "Target account does not exist.",
+  "ledger_hash": "F6A75B5277ABE754AA9840067406538BD9D913D145052F663D39266EA680F408",
+  "ledger_index": 6327010,
+  "meta": {
+    "AffectedNodes": [
+      {
+        "ModifiedNode": {
+          "FinalFields": {
+            "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+            "Balance": "994999952",
+            "Flags": 0,
+            "OwnerCount": 1,
+            "Sequence": 5
+          },
+          "LedgerEntryType": "AccountRoot",
+          "LedgerIndex": "C39E6BD7E8EC0E2104B99909A3B6DFFDFB7995A9890E5CFB17A909C8188D280A",
+          "PreviousFields": {
+            "Balance": "994999964",
+            "Sequence": 4
+          },
+          "PreviousTxnID": "9598A01F5EEBFD8A2243836761483845D4AC2F04297940004F934291FBBD4153",
+          "PreviousTxnLgrSeq": 6326984
+        }
+      }
+    ],
+    "TransactionIndex": 4,
+    "TransactionResult": "tecNO_TARGET"
+  },
+  "status": "closed",
+  "transaction": {
+    "Account": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+    "Fee": "12",
+    "LastLedgerSequence": 6327013,
+    "OfferSequence": 2,
+    "Owner": "rMdq5sFhA2zKsZKh2i5C9b2TxwLGPUDaUV",
+    "Sequence": 4,
+    "SigningPubKey": "03767C7B2C13AD90050A4263745E4BAB2B975417FA22E87780E1506DDAF21139BE",
+    "TransactionType": "EscrowFinish",
+    "TxnSignature": "3045022100E5963B14FBFCE2870BD6061D2470D10AADA916A9869BFF7953FEFEA9BD5FFCD9022029F06AB468A6224AFA99F072D30E37D40E52F8D6B9F00B56F128CD1C6BE3B372",
+    "date": 640309650,
+    "hash": "B112A918C4D675AD80AA2279D7EA009C25D73C10F6157FE7C624796D9E4E1125"
+  },
+  "type": "transaction",
+  "validated": true
+}

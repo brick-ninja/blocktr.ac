@@ -1,0 +1,48 @@
+{
+  "fee": 0,
+  "out": [
+    {
+      "n": 0,
+      "addr": "bc1qx9t2l3pyny2spqpqlye8svce70nppwtaxwdrp4",
+      "type": 0,
+      "spent": false,
+      "value": 670559840,
+      "script": "OP_0 3156afc4249915008020f932783319f3e610b97d",
+      "tx_index": 1520553841959564,
+      "spending_outpoints": []
+    },
+    {
+      "n": 1,
+      "type": 0,
+      "spent": false,
+      "value": 0,
+      "script": "OP_RETURN aa21a9ede556f02a474eb2ea1887786dc8f4aa80a8bd45b13567dbdcf4b83b5ea95ec273",
+      "tx_index": 1520553841959564,
+      "spending_outpoints": []
+    }
+  ],
+  "ver": 2,
+  "hash": "bef7d9a05a550b57584217b9edd79d7258465f8efb54da0e4a6614e53c7c372b",
+  "size": 196,
+  "time": 1620866943,
+  "inputs": [
+    {
+      "index": 0,
+      "script": "03626d0a047f779c6062696e616e63652f737a9b3318fe8f1d030000000000",
+      "witness": "01200000000000000000000000000000000000000000000000000000000000000000",
+      "prev_out": null,
+      "sequence": 4294967295
+    }
+  ],
+  "vin_sz": 1,
+  "weight": 676,
+  "vout_sz": 2,
+  "total_in": 0,
+  "tx_index": 1520553841959564,
+  "lock_time": 0,
+  "total_out": 670559840,
+  "relayed_by": "0.0.0.0",
+  "block_index": 683362,
+  "block_height": 683362,
+  "double_spend": false
+}
